@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - deployment
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,11 +18,11 @@ jobs:
           script: |
             export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            export PATH="$HOME/.nvm/versions/node/$(node -v)/bin:$PATH"
 
             cd ~/Portfolio
 
             git pull origin deployment
-
             npm install
             npm run build
 
