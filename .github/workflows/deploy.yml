@@ -16,6 +16,14 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
+           set -e  # কোনো কমান্ড fail করলে সাথে সাথে স্ক্রিপ্ট বন্ধ হয়ে যাবে
+ 
+            # ১. NVM লোড করা (non-interactive shell এ এটা ছাড়া npm/pm2 পাওয়া যাবে না)
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            nvm use 24
+
+            
             # ১. প্রজেক্ট ফোল্ডারে যাওয়া
             cd ~/Portfolio
 
