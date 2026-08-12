@@ -16,18 +16,13 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            # ১. NVM ও Node Bin পাথ নিশ্চিত করা
-            export NVM_DIR="$HOME/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-            export PATH="$HOME/.nvm/versions/node/v24.19.0/bin:$PATH"
-
-            # ২. প্রজেক্ট ফোল্ডারে যাওয়া
+            # ১. প্রজেক্ট ফোল্ডারে যাওয়া
             cd ~/Portfolio
 
-            # ৩. গিট পুল, ইনস্টল ও বিল্ড
+            # ২. গিট পুল, ইনস্টল ও বিল্ড
             git pull origin deployment
             npm install
             npm run build
 
-            # ৪. PM2-এর সরাসরি পাথ ব্যবহার করে রিস্টার্ট করা
-            $HOME/.nvm/versions/node/v24.19.0/bin/pm2 restart portfolio
+            # ৩. সরাসরি PM2 দিয়ে রিস্টার্ট
+            pm2 restart portfolio
