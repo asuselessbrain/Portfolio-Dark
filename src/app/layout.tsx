@@ -31,6 +31,11 @@ export const metadata: Metadata = {
   creator: "Arfan Ahmed",
   publisher: "Arfan Ahmed",
   metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   alternates: {
     canonical: "/",
   },
