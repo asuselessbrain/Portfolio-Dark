@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-cyan: #10b981;
+  --color-neon-purple: #34d399;
+  --color-matrix-green: #10b981;
+  --color-cyber-blue: #059669;
+  --color-cyber-dark: #0f172a;
+  --color-panel-bg: #1e293b;
+  --color-panel-border: rgba(255, 255, 255, 0.08);
+  --color-card-bg: #1e293b;
+  --color-card-border: rgba(255, 255, 255, 0.08);
+  --color-foreground: #f8fafc;
+  --color-background: #0f172a;
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-cyber: var(--font-inter), sans-serif;
+  --font-tech: var(--font-inter), sans-serif;
+  --font-mono: var(--font-inter), sans-serif;
+}
+
+:root {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --panel-bg: #1e293b;
+  --panel-border: rgba(255, 255, 255, 0.08);
+  --card-bg: #1e293b;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --brand-primary: #10b981;
+  --brand-hover: #34d399;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Subtle Cards & Panels */
+.cyber-panel {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+}
+
+/* Image Auto-Scroll Effect */
+@keyframes img-scroll {
+  0% {
+    object-position: center 0%;
+  }
+  50% {
+    object-position: center 100%;
+  }
+  100% {
+    object-position: center 0%;
+  }
+}
+
+.animate-img-scroll {
+  animation: img-scroll 50s ease-in-out infinite;
+}
+
+/* Infinite Marquee Animations for Skills Section */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 25s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 25s linear infinite;
+}
+
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
