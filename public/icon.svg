@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#1e293b" />
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#111827" />
     </linearGradient>
     <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8" />
@@ -13,17 +13,15 @@
 
   <!-- Background Box with Rounded Corners -->
   <rect width="512" height="512" rx="128" fill="url(#bg)" />
-  <rect width="512" height="512" rx="128" fill="none" stroke="url(#brandGrad)" stroke-width="12" stroke-opacity="0.3" />
+  <rect width="512" height="512" rx="128" fill="none" stroke="url(#brandGrad)" stroke-width="16" stroke-opacity="0.4" />
 
-  <!-- Geometric Monogram "A" + Code Brackets -->
-  <g transform="translate(40, 40)">
-    <!-- Code Bracket Left < -->
-    <path d="M 100 150 L 40 216 L 100 282" fill="none" stroke="url(#brandGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-    
-    <!-- Code Bracket Right > -->
-    <path d="M 332 150 L 392 216 L 332 282" fill="none" stroke="url(#brandGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" />
-    
-    <!-- Center Letter A -->
-    <path d="M 216 120 L 140 312 M 216 120 L 292 312 M 165 240 L 267 240" fill="none" stroke="url(#brandGrad)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
-  </g>
+  <!-- Bold, Clean Monogram Letter "A" -->
+  <path
+    d="M 256 116 L 140 396 M 256 116 L 372 396 M 176 300 L 336 300"
+    fill="none"
+    stroke="url(#brandGrad)"
+    stroke-width="52"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
 </svg>

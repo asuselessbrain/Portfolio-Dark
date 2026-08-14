@@ -3,12 +3,12 @@
  *
  * The production domain can be supplied at build/run time via the
  * NEXT_PUBLIC_SITE_URL environment variable. It falls back to the project's
- * own domain (https://arfan.dev) — the same domain the portfolio already uses
+ * own domain (https://arfanahmed.tech/) — the same domain the portfolio already uses
  * as its live demo URL and brand ("Arfan.dev"). Change the env var to deploy
  * under a different domain without touching source.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://arfan.dev"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://arfanahmed.tech/"
 ).replace(/\/$/, "");
 
 /** Build an absolute URL from a root-relative path. */
