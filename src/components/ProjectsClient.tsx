@@ -42,7 +42,7 @@ export default function ProjectsClient() {
       category: "frontend",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
       desc: "A hyper-interactive developer portfolio designed with fast server-side rendering, accessible SaaS component primitives, and responsive layout grids.",
-      demoUrl: "https://arfan.dev",
+      demoUrl: "https://arfanahmed.tech",
       gitUrl: "https://github.com/asuselessbrain",
       problem: "Traditional developer portfolios feel static and struggle to demonstrate deep technical mastery of complex modern stacks.",
       solution: "Designed a clean, dark SaaS environment built with Next.js App Router, TypeScript, and Framer Motion.",
@@ -347,11 +347,10 @@ export default function ProjectsClient() {
           <button
             key={cat.value}
             onClick={() => handleFilterChange(cat.value)}
-            className={`px-4 py-2 text-xs font-semibold rounded-lg border transition-all uppercase tracking-wide cursor-pointer ${
-              filter === cat.value
+            className={`px-4 py-2 text-xs font-semibold rounded-lg border transition-all uppercase tracking-wide cursor-pointer ${filter === cat.value
                 ? "border-emerald-500/60 text-emerald-400 bg-emerald-500/10 font-bold"
                 : "border-slate-800 text-slate-400 hover:text-slate-200 hover:bg-slate-800"
-            }`}
+              }`}
           >
             {cat.label}
           </button>
