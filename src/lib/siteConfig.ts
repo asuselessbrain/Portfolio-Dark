@@ -8,7 +8,7 @@
  * under a different domain without touching source.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://arfan.dev"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://arfanahmed.tech"
 ).replace(/\/$/, "");
 
 /** Build an absolute URL from a root-relative path. */
