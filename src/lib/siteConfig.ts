@@ -9,6 +9,7 @@
  */
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://arfan.dev"
+  // domain connected
 ).replace(/\/$/, "");
 
 /** Build an absolute URL from a root-relative path. */
