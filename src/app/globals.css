@@ -65,21 +65,17 @@ body {
   border-radius: 0.75rem;
 }
 
-/* Image Auto-Scroll Effect */
-@keyframes img-scroll {
-  0% {
-    object-position: center 0%;
-  }
-  50% {
-    object-position: center 100%;
-  }
-  100% {
-    object-position: center 0%;
-  }
+/* Image Hover Scroll Effect (Symmetrical Linear Forward & Reverse Scroll) */
+.card-img-hover-scroll {
+  object-position: center 0%;
+  transition: object-position 8s linear;
+  will-change: object-position;
 }
 
-.animate-img-scroll {
-  animation: img-scroll 50s ease-in-out infinite;
+.group:hover .card-img-hover-scroll,
+.modal-img-hover:hover {
+  object-position: center 100%;
+  transition: object-position 8s linear;
 }
 
 /* Infinite Marquee Animations for Skills Section */

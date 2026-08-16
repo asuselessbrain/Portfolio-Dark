@@ -73,7 +73,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               alt={project.title}
               fill
               sizes="(max-width: 768px) 100vw, 800px"
-              className="object-cover animate-img-scroll"
+              className="object-cover card-img-hover-scroll modal-img-hover"
             />
           </div>
 

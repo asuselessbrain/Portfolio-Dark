@@ -604,55 +604,49 @@ add_action( 'init', function() {
                 <button
                   key={idx}
                   onClick={() => setActiveServiceIndex(idx)}
-                  className={`w-full text-left p-5 rounded-2xl border transition-all duration-300 relative overflow-hidden group cursor-pointer ${
-                    isActive
+                  className={`w-full text-left p-5 rounded-2xl border transition-all duration-300 relative overflow-hidden group cursor-pointer ${isActive
                       ? "bg-[#1e293b] border-emerald-500/60 shadow-xl"
                       : "bg-[#131b2e]/90 border-slate-800/90 hover:border-slate-700 hover:bg-[#19233c]"
-                  }`}
+                    }`}
                 >
                   {/* Left Active Indicator Bar */}
                   <div
-                    className={`absolute top-0 left-0 w-1.5 h-full transition-all duration-300 ${
-                      isActive ? "bg-emerald-400" : "bg-transparent group-hover:bg-slate-700"
-                    }`}
+                    className={`absolute top-0 left-0 w-1.5 h-full transition-all duration-300 ${isActive ? "bg-emerald-400" : "bg-transparent group-hover:bg-slate-700"
+                      }`}
                   />
 
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex items-center space-x-3.5">
                       <span
-                        className={`text-xs font-mono font-bold px-2.5 py-1 rounded-md border transition-colors ${
-                          isActive
+                        className={`text-xs font-mono font-bold px-2.5 py-1 rounded-md border transition-colors ${isActive
                             ? "bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
                             : "bg-slate-900/60 text-slate-400 border-slate-800"
-                        }`}
+                          }`}
                       >
                         0{idx + 1}
                       </span>
                       <div
-                        className={`p-2.5 rounded-xl border transition-colors ${
-                          isActive
+                        className={`p-2.5 rounded-xl border transition-colors ${isActive
                             ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-400"
                             : "bg-slate-900/60 border-slate-800 text-slate-400"
-                        }`}
+                          }`}
                       >
                         {svc.icon}
                       </div>
                     </div>
 
                     <ArrowRight
-                      className={`w-4 h-4 transition-transform duration-300 ${
-                        isActive
+                      className={`w-4 h-4 transition-transform duration-300 ${isActive
                           ? "text-emerald-400 translate-x-1"
                           : "text-slate-600 group-hover:text-slate-400"
-                      }`}
+                        }`}
                     />
                   </div>
 
                   <div className="mt-3.5 space-y-1 pl-1">
                     <h3
-                      className={`text-base sm:text-lg font-bold transition-colors ${
-                        isActive ? "text-emerald-400" : "text-slate-200 group-hover:text-slate-100"
-                      }`}
+                      className={`text-base sm:text-lg font-bold transition-colors ${isActive ? "text-emerald-400" : "text-slate-200 group-hover:text-slate-100"
+                        }`}
                     >
                       {svc.title}
                     </h3>
@@ -871,11 +865,10 @@ add_action( 'init', function() {
               <button
                 key={idx}
                 onClick={() => setActiveStep(idx)}
-                className={`p-4 border rounded-xl text-left transition-all flex items-center justify-between cursor-pointer ${
-                  activeStep === idx
+                className={`p-4 border rounded-xl text-left transition-all flex items-center justify-between cursor-pointer ${activeStep === idx
                     ? "border-emerald-500/60 bg-emerald-500/10 text-emerald-400 font-semibold"
                     : "border-slate-800 bg-[#1e293b] text-slate-400 hover:text-slate-200"
-                }`}
+                  }`}
               >
                 <div className="flex items-center space-x-3">
                   <div className="p-2 bg-slate-900 rounded-lg">

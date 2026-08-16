@@ -44,17 +44,17 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
       className="bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer h-full"
     >
       <div>
-        {/* TOP SCREENSHOT THUMBNAIL (Fixed 16:9 aspect ratio with zoom on hover) */}
+        {/* TOP SCREENSHOT THUMBNAIL (Original aspect-video ratio with smooth linear scroll on hover) */}
         <div className="relative w-full aspect-video overflow-hidden bg-slate-900 border-b border-slate-800">
           <Image
             src={imageSrc}
             alt={`${project.title} Screenshot`}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-cover animate-img-scroll"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            className="object-cover card-img-hover-scroll"
           />
           {/* Subtle gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1e293b] via-transparent to-transparent opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1e293b] via-transparent to-transparent opacity-30 pointer-events-none" />
         </div>
 
         {/* Card Body */}
