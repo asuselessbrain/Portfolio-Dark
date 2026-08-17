@@ -109,11 +109,10 @@ export default function PageTransition({ children }: { children: React.ReactNode
                       <motion.span
                         key={index}
                         variants={letterVariants}
-                        className={`inline-block overflow-visible px-[0.04em] ${
-                          isFirstWord
-                            ? "text-slate-100 drop-shadow-[0_2px_12px_rgba(255,255,255,0.2)]"
-                            : "text-emerald-400 drop-shadow-[0_0_20px_rgba(16,185,129,0.5)]"
-                        }`}
+                        className={`inline-block overflow-visible px-[0.04em] ${isFirstWord
+                          ? "text-slate-100 drop-shadow-[0_2px_12px_rgba(255,255,255,0.2)]"
+                          : "text-emerald-400 drop-shadow-[0_0_20px_rgba(16,185,129,0.5)]"
+                          }`}
                       >
                         {char}
                       </motion.span>
