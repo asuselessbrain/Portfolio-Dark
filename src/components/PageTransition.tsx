@@ -78,9 +78,9 @@ export default function PageTransition({ children }: { children: React.ReactNode
             transition={{ duration: 0.65, ease: [0.76, 0, 0.24, 1] }}
             className="fixed inset-0 z-[9999] bg-[#0f172a] flex items-center justify-center overflow-hidden pointer-events-none select-none"
           >
-            {/* Ambient Background Emerald Glow */}
-            <div className="absolute w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none" />
-            <div className="absolute w-[300px] h-[300px] bg-teal-500/10 rounded-full blur-[100px] pointer-events-none" />
+            {/* Ambient Background Teal Glow */}
+            <div className="absolute w-[500px] h-[500px] bg-[#023644]/40 rounded-full blur-[140px] pointer-events-none" />
+            <div className="absolute w-[300px] h-[300px] bg-[#126972]/30 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="relative z-10 flex items-center justify-center px-6">
               {/* Human Letter-by-Letter Handwriting Container */}
@@ -111,7 +111,7 @@ export default function PageTransition({ children }: { children: React.ReactNode
                         variants={letterVariants}
                         className={`inline-block overflow-visible px-[0.04em] ${isFirstWord
                           ? "text-slate-100 drop-shadow-[0_2px_12px_rgba(255,255,255,0.2)]"
-                          : "text-emerald-400 drop-shadow-[0_0_20px_rgba(16,185,129,0.5)]"
+                          : "text-[#22a0ad] drop-shadow-[0_0_20px_rgba(18,105,114,0.6)]"
                           }`}
                       >
                         {char}

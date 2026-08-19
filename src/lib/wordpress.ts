@@ -1,0 +1,175 @@
+import { Project } from "@/components/ProjectCard";
+
+export interface CategoryOption {
+  label: string;
+  value: string;
+}
+
+export const WP_CATEGORIES_URL = "https://wp.arfanahmed.tech/wp-json/wp/v2/project_category";
+export const WP_PROJECTS_URL = "https://wp.arfanahmed.tech/wp-json/wp/v2/projects?_embed&per_page=100";
+
+export function cleanHtmlText(html: string | undefined): string {
+  if (!html) return "";
+  let text = html.replace(/<[^>]*>/g, "");
+  text = text
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&#8212;/g, "—")
+    .replace(/&#8211;/g, "–");
+  return text.trim();
+}
+
+function formatTagSlug(slug: string): string {
+  const customMap: Record<string, string> = {
+    "seo": "SEO",
+    "b2b": "B2B",
+    "crm-integration": "CRM Integration",
+    "gohighlevel": "GoHighLevel",
+    "go-high-level": "GoHighLevel",
+    "woocommerce": "WooCommerce",
+    "woo-commerce": "WooCommerce",
+    "wordpress": "WordPress",
+    "next-js": "Next.js",
+    "nextjs": "Next.js",
+    "react-js": "React",
+    "reactjs": "React",
+    "node-js": "Node.js",
+    "nodejs": "Node.js",
+    "elementor-pro": "Elementor Pro",
+  };
+  const lower = slug.toLowerCase();
+  if (customMap[lower]) return customMap[lower];
+  return slug
+    .split("-")
+    .map((word) => {
+      const wLower = word.toLowerCase();
+      if (wLower === "seo") return "SEO";
+      if (wLower === "b2b") return "B2B";
+      if (wLower === "crm") return "CRM";
+      if (wLower === "api") return "API";
+      if (wLower === "pro") return "Pro";
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(" ");
+}
+
+export async function fetchWordPressCategories(): Promise<CategoryOption[]> {
+  try {
+    const res = await fetch(WP_CATEGORIES_URL, {
+      next: { revalidate: 60 },
+    });
+    if (!res.ok) {
+      throw new Error(`Failed to fetch categories: ${res.status}`);
+    }
+    const data = await res.json();
+    const categories: CategoryOption[] = [
+      { label: "All Projects", value: "all" },
+    ];
+
+    if (Array.isArray(data)) {
+      data.forEach((cat: any) => {
+        if (cat.name && cat.slug) {
+          categories.push({
+            label: cleanHtmlText(cat.name),
+            value: cat.slug,
+          });
+        }
+      });
+    }
+
+    return categories;
+  } catch (error) {
+    console.error("Error fetching WordPress categories:", error);
+    return [
+      { label: "All Projects", value: "all" },
+      { label: "Full-Stack", value: "fullstack" },
+      { label: "Frontend", value: "frontend" },
+      { label: "WordPress", value: "wordpress" },
+    ];
+  }
+}
+
+export async function fetchWordPressProjects(): Promise<Project[]> {
+  try {
+    const res = await fetch(WP_PROJECTS_URL, {
+      next: { revalidate: 60 },
+    });
+    if (!res.ok) {
+      throw new Error(`Failed to fetch projects: ${res.status}`);
+    }
+    const data = await res.json();
+
+    if (!Array.isArray(data)) {
+      return [];
+    }
+
+    return data.map((post: any): Project => {
+      const acf = post.acf || {};
+      const embedded = post._embedded || {};
+
+      // Primary category from embedded terms
+      const categoryTerm = embedded["wp:term"]?.[0]?.[0];
+      const categorySlug = categoryTerm?.slug || "wordpress";
+
+      // Featured image from embedded media or ACF
+      const featuredMedia = embedded["wp:featuredmedia"]?.[0];
+      const imageUrl = featuredMedia?.source_url || acf.featured_image || `/images/projects/${post.slug || post.id}.webp`;
+
+      // Extract tags
+      let tags: string[] = [];
+      if (Array.isArray(acf.tags) && acf.tags.length > 0) {
+        tags = acf.tags.map((t: any) => typeof t === "string" ? t : t.name || t.slug);
+      } else if (Array.isArray(post.class_list)) {
+        const rawTags = post.class_list
+          .filter((cls: string) => cls.startsWith("tags-"))
+          .map((cls: string) => formatTagSlug(cls.replace("tags-", "")));
+        if (rawTags.length > 0) {
+          tags = rawTags;
+        }
+      }
+      if (tags.length === 0) {
+        tags = ["WordPress", "Responsive Design"];
+      }
+
+      // Architecture details
+      const arch = acf.architecture_details || {};
+      let detailsList: string[] = [];
+      if (Array.isArray(arch.details_list)) {
+        detailsList = arch.details_list
+          .map((item: any) => {
+            if (typeof item === "string") return cleanHtmlText(item);
+            if (item && typeof item === "object" && item.detail) return cleanHtmlText(item.detail);
+            return "";
+          })
+          .filter(Boolean);
+      }
+
+      return {
+        id: String(post.id),
+        title: cleanHtmlText(post.title?.rendered || "Untitled Project"),
+        category: categorySlug,
+        image: imageUrl,
+        tags,
+        desc: cleanHtmlText(acf.short_description || post.excerpt?.rendered || ""),
+        demoUrl: acf.demo_url || "",
+        gitUrl: acf.github_url || acf.github_frontend_url || acf.github_backend_url || "",
+        problem: cleanHtmlText(acf.problem),
+        solution: cleanHtmlText(acf.solution),
+        result: cleanHtmlText(acf.result),
+        archDetails: {
+          frontend: cleanHtmlText(arch.frontend || "Elementor Pro / React"),
+          backend: cleanHtmlText(arch.backend || "WordPress REST API"),
+          database: cleanHtmlText(arch.database || "MySQL"),
+          detailsList,
+        },
+      };
+    });
+  } catch (error) {
+    console.error("Error fetching WordPress projects:", error);
+    return [];
+  }
+}

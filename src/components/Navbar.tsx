@@ -46,9 +46,9 @@ export default function Navbar() {
           onClick={handleNavClick}
           className="flex items-center space-x-2 font-bold tracking-tight text-lg md:text-xl group"
         >
-          <Code2 className="w-5 h-5 text-emerald-500" />
+          <Code2 className="w-5 h-5 text-[#126972]" />
           <span className="text-slate-100 font-extrabold">
-            Arfan<span className="text-emerald-400">.dev</span>
+            Arfan<span className="text-[#22a0ad]">.dev</span>
           </span>
         </Link>
 
@@ -63,12 +63,12 @@ export default function Navbar() {
                   href={link.href}
                   onClick={handleNavClick}
                   className={`text-sm font-medium relative py-1 transition-colors ${
-                    isActive ? "text-emerald-400 font-semibold" : "text-slate-400 hover:text-slate-100"
+                    isActive ? "text-[#22a0ad] font-semibold" : "text-slate-400 hover:text-slate-100"
                   }`}
                 >
                   {link.name}
                   {isActive && (
-                    <span className="absolute bottom-0 left-0 w-full h-[2px] bg-emerald-500 rounded-full" />
+                    <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#126972] to-[#22a0ad] rounded-full" />
                   )}
                 </Link>
               );
@@ -81,7 +81,7 @@ export default function Navbar() {
               href="/resume.pdf"
               download="Arfan_Ahmed_Resume.pdf"
               onClick={() => analytics.trackResumeDownload()}
-              className="px-4 py-2 border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-400 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5"
+              className="px-4 py-2 border border-[#126972]/60 text-[#22a0ad] hover:bg-[#023644]/40 hover:border-[#126972] text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 shadow-sm"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Resume</span>
@@ -113,7 +113,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={handleNavClick}
                   className={`text-base font-semibold border-b border-slate-800/60 pb-3 transition-colors ${
-                    isActive ? "text-emerald-400 font-bold" : "text-slate-300 hover:text-white"
+                    isActive ? "text-[#22a0ad] font-bold" : "text-slate-300 hover:text-white"
                   }`}
                 >
                   {link.name}
@@ -130,7 +130,7 @@ export default function Navbar() {
                 handleNavClick();
                 analytics.trackResumeDownload();
               }}
-              className="w-full py-3 px-4 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs text-center uppercase tracking-wide flex items-center justify-center gap-2"
+              className="w-full py-3 px-4 rounded-lg bg-gradient-to-r from-[#126972] to-[#22a0ad] hover:from-[#18838f] hover:to-[#2bc0d0] text-white font-bold text-xs text-center uppercase tracking-wide flex items-center justify-center gap-2 shadow-md"
             >
               <Download className="w-4 h-4" />
               <span>Download Resume</span>

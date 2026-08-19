@@ -41,7 +41,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
   return (
     <div
       onClick={handleCardClick}
-      className="bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer h-full"
+      className="bg-[#1e293b] border border-slate-800 hover:border-[#126972]/60 rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer h-full"
     >
       <div>
         {/* TOP SCREENSHOT THUMBNAIL (Original aspect-video ratio with smooth linear scroll on hover) */}
@@ -61,13 +61,13 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
         <div className="p-5 space-y-3">
           {/* Category Tag Pill */}
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-md capitalize">
+            <span className="text-xs font-semibold px-2.5 py-0.5 bg-[#023644]/50 text-[#22a0ad] border border-[#126972]/40 rounded-md capitalize">
               {project.category}
             </span>
           </div>
 
           {/* Title */}
-          <h3 className="text-base sm:text-lg font-bold text-slate-100 group-hover:text-emerald-400 transition-colors line-clamp-1">
+          <h3 className="text-base sm:text-lg font-bold text-slate-100 group-hover:text-[#22a0ad] transition-colors line-clamp-1">
             {project.title}
           </h3>
 
@@ -92,7 +92,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
 
       {/* Footer Controls */}
       <div className="px-5 pb-5 pt-3 border-t border-slate-800/80 flex items-center justify-between mt-auto">
-        <span className="text-xs font-semibold text-emerald-400 group-hover:text-emerald-300 flex items-center gap-1">
+        <span className="text-xs font-semibold text-[#22a0ad] group-hover:text-cyan-300 flex items-center gap-1">
           View Case Study <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
         </span>
 
@@ -103,7 +103,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="text-slate-400 hover:text-emerald-400 transition-colors p-1"
+              className="text-slate-400 hover:text-[#22a0ad] transition-colors p-1"
               title="View GitHub Repository"
             >
               <FaGithub className="w-4 h-4" />
@@ -115,7 +115,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="text-slate-400 hover:text-emerald-400 transition-colors p-1"
+              className="text-slate-400 hover:text-[#22a0ad] transition-colors p-1"
               title="View Live Site"
             >
               <ExternalLink className="w-4 h-4" />
