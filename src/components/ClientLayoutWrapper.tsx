@@ -15,7 +15,7 @@ export default function ClientLayoutWrapper({ children }: { children: React.Reac
   }, [pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen relative text-slate-100 selection:bg-emerald-500/30 selection:text-white bg-[#0f172a]">
+    <div className="flex flex-col min-h-screen relative text-slate-100 selection:bg-[#126972]/40 selection:text-white bg-[#0f172a]">
       {/* Top Navbar */}
       <Navbar />
 

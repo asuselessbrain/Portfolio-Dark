@@ -68,37 +68,59 @@ export default function HomeClient() {
 
   const services = [
     {
-      icon: <Server className="w-6 h-6 text-emerald-400" />,
-      title: "Full-Stack Applications",
-      tagline: "Next.js App Router & Node.js Architecture",
+      icon: <Server className="w-6 h-6 text-[#22a0ad]" />,
+      title: "Full-Stack Web Applications",
+      tagline: "Next.js 15, React & Node.js Enterprise Systems",
       desc: "Architecting high-performance digital systems leveraging Next.js (App Router), React, TypeScript, Node.js, and Express with type-safe REST & GraphQL endpoints.",
-      techs: ["Next.js", "React", "TypeScript", "Node.js", "Tailwind CSS", "Redux"],
+      techs: ["Next.js", "React", "TypeScript", "Node.js", "Tailwind CSS", "Redux Toolkit", "Zustand"],
       highlights: [
-        "Server-Side Rendering (SSR) & Incremental Static Regeneration (ISR)",
-        "100% Type-Safe Contracts with TypeScript & Zod Validation",
-        "Modular Component Architecture & State Optimization",
+        "Server-Side Rendering (SSR), SSG & Incremental Static Regeneration (ISR)",
+        "Strict Type Safety with TypeScript, Zod Schema Validation & Prisma ORM",
+        "Modular Component Architecture & Global State Management Systems",
         "Top Core Web Vitals Performance (95+ Lighthouse Score)"
       ],
-      codeSnippet: `// Full-Stack App Router Spec
+      codeSnippet: `// Next.js App Router & Type-Safe API Spec
 export const appConfig = {
-  framework: "Next.js 14+ (App Router)",
+  framework: "Next.js 15 (App Router)",
   typeSafety: "Strict TypeScript + Zod",
-  rendering: "Hybrid SSR / SSG / Edge",
+  rendering: "Hybrid SSR / ISR / Edge",
   stateManagement: "Zustand & TanStack Query",
   styling: "Tailwind CSS & Framer Motion",
   performance: "Core Web Vitals 98/100"
 };`
     },
     {
-      icon: <Database className="w-6 h-6 text-emerald-400" />,
+      icon: <Globe className="w-6 h-6 text-[#22a0ad]" />,
+      title: "Custom CMS & WordPress Engineering",
+      tagline: "Bespoke Themes, Custom Sync Plugins & Headless WP",
+      desc: "Building corporate-grade WordPress architectures, custom ACF themes, bespoke sync plugins from scratch, WooCommerce setups, and Webflow client-first builds.",
+      techs: ["WordPress", "WooCommerce", "Custom Plugins", "ACF Pro", "Headless WP", "Webflow", "PHP"],
+      highlights: [
+        "Bespoke WordPress Themes Built From Scratch (Zero Builder Bloat)",
+        "Custom Plugin Engineering for Database Syncing & Legacy Systems",
+        "Headless WordPress & WooCommerce Custom Post Type REST APIs",
+        "Webflow Client-First System Integration & Custom JavaScript"
+      ],
+      codeSnippet: `// Custom WordPress Plugin Architecture
+add_action( 'init', function() {
+  register_post_type( 'portfolio_project', array(
+    'labels'       => array( 'name' => __( 'Projects' ) ),
+    'public'       => true,
+    'show_in_rest' => true, // Headless WP REST API
+    'supports'     => array( 'title', 'editor', 'thumbnail' )
+  ) );
+} );`
+    },
+    {
+      icon: <Database className="w-6 h-6 text-[#22a0ad]" />,
       title: "Database & Backend Architecture",
-      tagline: "Relational & NoSQL Schema Engineering",
-      desc: "Designing secure, relational, and non-relational database schemas using PostgreSQL, MongoDB, Prisma ORM, Mongoose, and connection pooling.",
-      techs: ["PostgreSQL", "MongoDB", "Prisma", "REST APIs", "Express.js", "Mongoose"],
+      tagline: "Relational PostgreSQL, NoSQL Schema & Connection Pooling",
+      desc: "Designing secure, relational, and non-relational database schemas using PostgreSQL, MongoDB, Prisma ORM, Mongoose, and connection pooling for high throughput.",
+      techs: ["PostgreSQL", "MongoDB", "Prisma ORM", "Express.js", "Mongoose", "Supabase", "REST APIs"],
       highlights: [
         "Strict Normalized Schema Design & Indexed Query Optimization",
         "Type-Safe Database ORM Access using Prisma & Mongoose",
-        "Decoupled REST & GraphQL Backend Microservices",
+        "Decoupled REST & GraphQL Backend Microservices Architecture",
         "Automated Migrations, Security Protocols & Connection Pooling"
       ],
       codeSnippet: `// PostgreSQL + Prisma Schema Config
@@ -116,26 +138,24 @@ model User {
 }`
     },
     {
-      icon: <Globe className="w-6 h-6 text-emerald-400" />,
-      title: "Custom CMS & Webflow Solutions",
-      tagline: "WordPress Architecture & Webflow Systems",
-      desc: "Building corporate-grade WordPress architectures, custom ACF themes, bespoke sync plugins, WooCommerce setups, and Webflow client-first builds.",
-      techs: ["WordPress", "WooCommerce", "Webflow", "Custom Plugins", "ACF Pro", "Rest API"],
+      icon: <TrendingUp className="w-6 h-6 text-[#22a0ad]" />,
+      title: "Performance & Technical SEO",
+      tagline: "Lighthouse 95+, Hydration Speed & Schema Markup",
+      desc: "Fine-tuning page load speed, reducing bundle size, optimizing Core Web Vitals (LCP, CLS, INP), and injecting JSON-LD schema markup for top search engine visibility.",
+      techs: ["Core Web Vitals", "Lighthouse", "Technical SEO", "JSON-LD Schema", "Image Optimization", "Clean Code"],
       highlights: [
-        "Bespoke WordPress Themes Built From Scratch (No Bloat Builders)",
-        "Custom Plugin Engineering for Database Syncing & Legacy Systems",
-        "Headless WordPress & WooCommerce Custom Post Type REST APIs",
-        "Webflow Client-First System Integration & Custom JavaScript"
+        "Lighthouse 95+ PageSpeed Optimization for Mobile & Desktop",
+        "Hydration Latency Reduction & Smart Code-Splitting",
+        "Structured Data / OpenGraph Metadata for Rich Social Previews",
+        "Accessibility (a11y) Compliance & Semantic HTML5 Structure"
       ],
-      codeSnippet: `// Custom WordPress Plugin Architecture
-add_action( 'init', function() {
-  register_post_type( 'portfolio_project', array(
-    'labels'       => array( 'name' => __( 'Projects' ) ),
-    'public'       => true,
-    'show_in_rest' => true, // Headless WP REST API
-    'supports'     => array( 'title', 'editor', 'thumbnail' )
-  ) );
-} );`
+      codeSnippet: `// Technical SEO & Core Web Vitals Spec
+export const seoConfig = {
+  lighthouseTarget: "95+ All Metrics",
+  coreWebVitals: { LCP: "< 1.2s", CLS: "< 0.05", INP: "< 100ms" },
+  structuredData: ["LocalBusiness", "Person", "SoftwareSourceCode"],
+  openGraph: "Dynamic Card Social Previews"
+};`
     }
   ];
 
@@ -143,7 +163,7 @@ add_action( 'init', function() {
     { name: "React", level: "Expert", icon: <FaReact className="w-5 h-5 text-cyan-400" /> },
     { name: "Next.js", level: "Senior", icon: <SiNextdotjs className="w-5 h-5 text-slate-100" /> },
     { name: "TypeScript", level: "Expert", icon: <SiTypescript className="w-5 h-5 text-blue-400" /> },
-    { name: "Node.js", level: "Advanced", icon: <FaNodeJs className="w-5 h-5 text-emerald-400" /> },
+    { name: "Node.js", level: "Advanced", icon: <FaNodeJs className="w-5 h-5 text-[#22a0ad]" /> },
     { name: "Tailwind CSS", level: "Expert", icon: <SiTailwindcss className="w-5 h-5 text-cyan-400" /> },
     { name: "PostgreSQL", level: "Advanced", icon: <SiPostgresql className="w-5 h-5 text-sky-400" /> }
   ];
@@ -154,7 +174,7 @@ add_action( 'init', function() {
     { name: "MongoDB", level: "Advanced", icon: <SiMongodb className="w-5 h-5 text-emerald-500" /> },
     { name: "Prisma", level: "Advanced", icon: <SiPrisma className="w-5 h-5 text-slate-200" /> },
     { name: "Firebase", level: "Advanced", icon: <SiFirebase className="w-5 h-5 text-amber-400" /> },
-    { name: "Supabase", level: "Advanced", icon: <SiSupabase className="w-5 h-5 text-emerald-400" /> }
+    { name: "Supabase", level: "Advanced", icon: <SiSupabase className="w-5 h-5 text-[#22a0ad]" /> }
   ];
 
   const featuredProjects: Project[] = [
@@ -234,22 +254,22 @@ add_action( 'init', function() {
 
   const workflowSteps = [
     {
-      icon: <Globe className="w-5 h-5 text-emerald-400" />,
+      icon: <Globe className="w-5 h-5 text-[#22a0ad]" />,
       title: "1. Architecture & Strategy",
       desc: "Designing scalable system architectures, normalization of databases, and defining clear API specifications tailored to client growth goals."
     },
     {
-      icon: <Code className="w-5 h-5 text-emerald-400" />,
+      icon: <Code className="w-5 h-5 text-[#22a0ad]" />,
       title: "2. Type-Safe Development",
       desc: "Writing modular, self-documenting code with reusable components and strictly typed interfaces to ensure reliable runtime execution."
     },
     {
-      icon: <TrendingUp className="w-5 h-5 text-emerald-400" />,
+      icon: <TrendingUp className="w-5 h-5 text-[#22a0ad]" />,
       title: "3. Optimization & SEO",
       desc: "Fine-tuning server-side rendering, Core Web Vitals, site speed, and structured SEO metadata so products rank high and load fast."
     },
     {
-      icon: <Lock className="w-5 h-5 text-emerald-400" />,
+      icon: <Lock className="w-5 h-5 text-[#22a0ad]" />,
       title: "4. Secure Deployment",
       desc: "Deploying production-ready applications with automated CI/CD pipelines, SSL protection, security headers, and continuous server health checks."
     }
@@ -262,8 +282,8 @@ add_action( 'init', function() {
       <section className="min-h-[75vh] flex flex-col justify-center relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6 z-10">
-            <div className="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <div className="inline-flex items-center space-x-2 bg-[#023644]/50 border border-[#126972]/40 text-[#22a0ad] px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
+              <span className="w-2 h-2 rounded-full bg-[#126972] animate-pulse" />
               <span>Available for Full-Stack & WordPress Projects</span>
             </div>
 
@@ -280,7 +300,7 @@ add_action( 'init', function() {
             <div className="flex flex-wrap gap-4 pt-2">
               <Link
                 href="/projects"
-                className="px-6 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-lg transition-all shadow-md flex items-center gap-2"
+                className="px-6 py-3.5 bg-gradient-to-r from-[#126972] to-[#22a0ad] hover:from-[#18838f] hover:to-[#2bc0d0] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all shadow-[0_0_20px_rgba(18,105,114,0.4)] flex items-center gap-2"
               >
                 <span>View My Work</span>
                 <ArrowRight className="w-4 h-4" />
@@ -305,7 +325,7 @@ add_action( 'init', function() {
                 href="https://github.com/asuselessbrain"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-emerald-500/50 text-slate-400 hover:text-emerald-400 transition-colors"
+                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-[#126972]/50 text-slate-400 hover:text-[#22a0ad] transition-colors"
                 title="GitHub"
                 aria-label="Arfan Ahmed on GitHub"
               >
@@ -317,7 +337,7 @@ add_action( 'init', function() {
                 href="https://www.linkedin.com/in/arfan-ahmed40/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-emerald-500/50 text-slate-400 hover:text-emerald-400 transition-colors"
+                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-[#126972]/50 text-slate-400 hover:text-[#22a0ad] transition-colors"
                 title="LinkedIn"
                 aria-label="Arfan Ahmed on LinkedIn"
               >
@@ -327,7 +347,7 @@ add_action( 'init', function() {
               {/* Email */}
               <a
                 href="mailto:arfan18@cse.pstu.ac.bd"
-                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-emerald-500/50 text-slate-400 hover:text-emerald-400 transition-colors"
+                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-[#126972]/50 text-slate-400 hover:text-[#22a0ad] transition-colors"
                 title="Email"
                 aria-label="Email Arfan Ahmed"
               >
@@ -339,7 +359,7 @@ add_action( 'init', function() {
                 href="https://www.facebook.com/arfan.arfanahmed.73"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-emerald-500/50 text-slate-400 hover:text-emerald-400 transition-colors"
+                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-[#126972]/50 text-slate-400 hover:text-[#22a0ad] transition-colors"
                 title="Facebook"
                 aria-label="Arfan Ahmed on Facebook"
               >
@@ -351,7 +371,7 @@ add_action( 'init', function() {
                 href="https://wa.me/8801615391684"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-emerald-500/50 text-slate-400 hover:text-emerald-400 transition-colors"
+                className="p-2.5 bg-slate-800/80 border border-slate-700/80 rounded-lg hover:border-[#126972]/50 text-slate-400 hover:text-[#22a0ad] transition-colors"
                 title="WhatsApp"
                 aria-label="Chat with Arfan Ahmed on WhatsApp"
               >
@@ -363,8 +383,8 @@ add_action( 'init', function() {
           {/* Right: Photo + Soft Emerald Glow (Without Floating Badges) */}
           <div className="lg:col-span-5 flex justify-center items-center relative z-10 py-6 lg:py-0">
             <div className="relative flex items-center justify-center">
-              {/* Soft blurred emerald radial gradient glow */}
-              <div className="absolute w-[380px] sm:w-[420px] h-[380px] sm:h-[420px] rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.2)_0%,rgba(16,185,129,0)_70%)] blur-[8px] pointer-events-none -z-10" />
+              {/* Soft blurred teal radial gradient glow */}
+              <div className="absolute w-[380px] sm:w-[420px] h-[380px] sm:h-[420px] rounded-full bg-[radial-gradient(circle,rgba(18,105,114,0.25)_0%,rgba(18,105,114,0)_70%)] blur-[8px] pointer-events-none -z-10" />
 
               {/* Photo container with rounded corners (16px), no card background or border */}
               <div className="relative w-[280px] sm:w-[310px] md:w-[450px] h-[350px] sm:h-[390px] md:h-[500px] rounded-[20px] overflow-hidden shadow-2xl">
@@ -392,11 +412,11 @@ add_action( 'init', function() {
       >
         {/* Section Header */}
         <div className="text-left space-y-2">
-          <h2 className="text-xs font-bold text-emerald-400 tracking-wider uppercase">
+          <h2 className="text-xs font-bold text-[#22a0ad] tracking-wider uppercase">
             Who I Am
           </h2>
           <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-100">
-            About <span className="text-emerald-400">Me</span>
+            About <span className="text-[#22a0ad]">Me</span>
           </p>
         </div>
 
@@ -406,7 +426,7 @@ add_action( 'init', function() {
             {/* Left: Bio & Highlights */}
             <div className="lg:col-span-6 space-y-4">
               <h3 className="text-xl sm:text-2xl font-bold text-slate-100">
-                Full-Stack Engineer & <span className="text-emerald-400">WordPress Architect</span>
+                Full-Stack Engineer & <span className="text-[#22a0ad]">WordPress Architect</span>
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
                 I specialize in building scalable web applications with Next.js, React, TypeScript, Node.js, PostgreSQL, and custom WordPress architectures. Focused on type safety, high speed performance, intuitive UX, and maintainable codebase structure.
@@ -414,26 +434,26 @@ add_action( 'init', function() {
 
               <div className="grid grid-cols-2 gap-3 pt-2">
                 <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl space-y-0.5">
-                  <span className="text-[11px] font-bold text-emerald-400 block uppercase tracking-wider">Frontend</span>
+                  <span className="text-[11px] font-bold text-[#22a0ad] block uppercase tracking-wider">Frontend</span>
                   <span className="text-xs text-slate-300 font-medium block">Next.js, React, TS, Tailwind</span>
                 </div>
                 <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl space-y-0.5">
-                  <span className="text-[11px] font-bold text-emerald-400 block uppercase tracking-wider">Backend</span>
+                  <span className="text-[11px] font-bold text-[#22a0ad] block uppercase tracking-wider">Backend</span>
                   <span className="text-xs text-slate-300 font-medium block">Node.js, Express, REST, GraphQL</span>
                 </div>
                 <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl space-y-0.5">
-                  <span className="text-[11px] font-bold text-emerald-400 block uppercase tracking-wider">Database</span>
+                  <span className="text-[11px] font-bold text-[#22a0ad] block uppercase tracking-wider">Database</span>
                   <span className="text-xs text-slate-300 font-medium block">PostgreSQL, MongoDB, Prisma</span>
                 </div>
                 <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl space-y-0.5">
-                  <span className="text-[11px] font-bold text-emerald-400 block uppercase tracking-wider">CMS Core</span>
+                  <span className="text-[11px] font-bold text-[#22a0ad] block uppercase tracking-wider">CMS Core</span>
                   <span className="text-xs text-slate-300 font-medium block">WordPress, WooCommerce, Plugins</span>
                 </div>
               </div>
 
               {/* Education Pill Card */}
-              <div className="p-3 bg-slate-900/60 border border-slate-800 hover:border-emerald-500/40 rounded-xl space-y-0.5 transition-all">
-                <div className="flex items-center space-x-1.5 text-emerald-400">
+              <div className="p-3 bg-slate-900/60 border border-slate-800 hover:border-[#126972]/50 rounded-xl space-y-0.5 transition-all">
+                <div className="flex items-center space-x-1.5 text-[#22a0ad]">
                   <GraduationCap className="w-3.5 h-3.5 shrink-0" />
                   <span className="text-[11px] font-bold uppercase tracking-wider">Education</span>
                 </div>
@@ -444,7 +464,7 @@ add_action( 'init', function() {
               <div className="pt-2">
                 <Link
                   href="/about"
-                  className="px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-lg transition-all inline-flex items-center gap-2 shadow-md"
+                  className="px-5 py-2.5 bg-gradient-to-r from-[#126972] to-[#22a0ad] hover:from-[#18838f] hover:to-[#2bc0d0] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all inline-flex items-center gap-2 shadow-md"
                 >
                   <span>More About Me</span>
                   <ArrowRight className="w-4 h-4" />
@@ -460,13 +480,13 @@ add_action( 'init', function() {
                   <div className="flex items-center space-x-2">
                     <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
-                    <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
+                    <span className="w-3 h-3 rounded-full bg-[#126972] inline-block" />
                   </div>
                   <div className="flex items-center space-x-1.5 text-slate-400 text-[11px] font-sans font-medium">
-                    <Code className="w-3.5 h-3.5 text-emerald-400" />
+                    <Code className="w-3.5 h-3.5 text-[#22a0ad]" />
                     <span>arfan.config.ts</span>
                   </div>
-                  <span className="text-[10px] text-emerald-400 font-mono">UTF-8</span>
+                  <span className="text-[10px] text-[#22a0ad] font-mono">UTF-8</span>
                 </div>
 
                 {/* Code Content */}
@@ -477,11 +497,11 @@ add_action( 'init', function() {
                   </div>
                   <div className="pl-4">
                     <span className="text-slate-400">name:</span>{" "}
-                    <span className="text-emerald-300">&quot;Arfan Ahmed&quot;</span>,
+                    <span className="text-[#22a0ad]">&quot;Arfan Ahmed&quot;</span>,
                   </div>
                   <div className="pl-4">
                     <span className="text-slate-400">title:</span>{" "}
-                    <span className="text-emerald-300">&quot;Full-Stack Engineer &amp; WP Architect&quot;</span>,
+                    <span className="text-[#22a0ad]">&quot;Full-Stack Engineer &amp; WP Architect&quot;</span>,
                   </div>
                   <div className="pl-4">
                     <span className="text-slate-400">education:</span>{" "}
@@ -493,24 +513,24 @@ add_action( 'init', function() {
                   </div>
                   <div className="pl-4">
                     <span className="text-slate-400">techStack:</span> [
-                    <div className="pl-4 text-emerald-300">
+                    <div className="pl-4 text-[#22a0ad]">
                       &quot;Next.js (App Router)&quot;, &quot;TypeScript&quot;,
                     </div>
-                    <div className="pl-4 text-emerald-300">
+                    <div className="pl-4 text-[#22a0ad]">
                       &quot;Node.js &amp; Express APIs&quot;, &quot;PostgreSQL&quot;,
                     </div>
-                    <div className="pl-4 text-emerald-300">
+                    <div className="pl-4 text-[#22a0ad]">
                       &quot;Custom WordPress &amp; WooCommerce&quot;
                     </div>
                     ],
                   </div>
                   <div className="pl-4">
                     <span className="text-slate-400">architecture:</span>{" "}
-                    <span className="text-emerald-300">&quot;Type-Safe &amp; Scalable&quot;</span>,
+                    <span className="text-[#22a0ad]">&quot;Type-Safe &amp; Scalable&quot;</span>,
                   </div>
                   <div className="pl-4">
                     <span className="text-slate-400">status:</span>{" "}
-                    <span className="text-emerald-400 font-semibold">&quot;Available for Projects 🚀&quot;</span>
+                    <span className="text-[#22a0ad] font-semibold">&quot;Available for Projects 🚀&quot;</span>
                   </div>
                   <div>&#125;;</div>
                 </div>
@@ -522,12 +542,12 @@ add_action( 'init', function() {
         {/* Bottom Block: Metric Cards Grid (3 Cards like Tumit's Bento grid) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 */}
-          <div className="bg-[#1e293b] p-6 border border-slate-800 hover:border-emerald-500/50 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg group space-y-3">
-            <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+          <div className="bg-[#1e293b] p-6 border border-slate-800 hover:border-[#126972]/50 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg group space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-[#023644]/50 border border-[#126972]/40 flex items-center justify-center text-[#22a0ad] group-hover:scale-110 transition-transform">
               <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
-              <div className="text-2xl font-extrabold text-slate-100 group-hover:text-emerald-400 transition-colors">
+              <div className="text-2xl font-extrabold text-slate-100 group-hover:text-[#22a0ad] transition-colors">
                 10+ Months
               </div>
               <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mt-0.5">
@@ -540,12 +560,12 @@ add_action( 'init', function() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#1e293b] p-6 border border-slate-800 hover:border-emerald-500/50 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg group space-y-3">
-            <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+          <div className="bg-[#1e293b] p-6 border border-slate-800 hover:border-[#126972]/50 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg group space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-[#023644]/50 border border-[#126972]/40 flex items-center justify-center text-[#22a0ad] group-hover:scale-110 transition-transform">
               <Layers className="w-6 h-6" />
             </div>
             <div>
-              <div className="text-2xl font-extrabold text-slate-100 group-hover:text-emerald-400 transition-colors">
+              <div className="text-2xl font-extrabold text-slate-100 group-hover:text-[#22a0ad] transition-colors">
                 35+
               </div>
               <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mt-0.5">
@@ -558,12 +578,12 @@ add_action( 'init', function() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#1e293b] p-6 border border-slate-800 hover:border-emerald-500/50 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg group space-y-3">
-            <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+          <div className="bg-[#1e293b] p-6 border border-slate-800 hover:border-[#126972]/50 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg group space-y-3">
+            <div className="w-12 h-12 rounded-xl bg-[#023644]/50 border border-[#126972]/40 flex items-center justify-center text-[#22a0ad] group-hover:scale-110 transition-transform">
               <Cpu className="w-6 h-6" />
             </div>
             <div>
-              <div className="text-2xl font-extrabold text-slate-100 group-hover:text-emerald-400 transition-colors">
+              <div className="text-2xl font-extrabold text-slate-100 group-hover:text-[#22a0ad] transition-colors">
                 100%
               </div>
               <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mt-0.5">
@@ -586,11 +606,14 @@ add_action( 'init', function() {
         className="space-y-8 z-10 relative"
       >
         <div className="text-left space-y-2">
-          <h2 className="text-xs font-bold text-emerald-400 tracking-wider uppercase">
-            Services &amp; Solutions
+          <h2 className="text-xs font-bold text-[#22a0ad] tracking-wider uppercase">
+            My Services
           </h2>
           <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-100">
-            Core <span className="text-emerald-400">Expertise</span>
+            What I <span className="text-[#22a0ad]">Offer &amp; Deliver</span>
+          </p>
+          <p className="text-xs sm:text-sm text-slate-400 max-w-xl leading-relaxed">
+            Specialized web development services focused on high-speed web apps, custom WordPress plugin architectures, database normalization, and technical SEO.
           </p>
         </div>
 
@@ -605,13 +628,13 @@ add_action( 'init', function() {
                   key={idx}
                   onClick={() => setActiveServiceIndex(idx)}
                   className={`w-full text-left p-5 rounded-2xl border transition-all duration-300 relative overflow-hidden group cursor-pointer ${isActive
-                      ? "bg-[#1e293b] border-emerald-500/60 shadow-xl"
+                      ? "bg-[#1e293b] border-[#126972]/80 shadow-xl"
                       : "bg-[#131b2e]/90 border-slate-800/90 hover:border-slate-700 hover:bg-[#19233c]"
                     }`}
                 >
                   {/* Left Active Indicator Bar */}
                   <div
-                    className={`absolute top-0 left-0 w-1.5 h-full transition-all duration-300 ${isActive ? "bg-emerald-400" : "bg-transparent group-hover:bg-slate-700"
+                    className={`absolute top-0 left-0 w-1.5 h-full transition-all duration-300 ${isActive ? "bg-[#126972]" : "bg-transparent group-hover:bg-slate-700"
                       }`}
                   />
 
@@ -619,7 +642,7 @@ add_action( 'init', function() {
                     <div className="flex items-center space-x-3.5">
                       <span
                         className={`text-xs font-mono font-bold px-2.5 py-1 rounded-md border transition-colors ${isActive
-                            ? "bg-emerald-500/20 text-emerald-400 border-emerald-500/30"
+                            ? "bg-[#023644]/60 text-[#22a0ad] border-[#126972]/50"
                             : "bg-slate-900/60 text-slate-400 border-slate-800"
                           }`}
                       >
@@ -627,7 +650,7 @@ add_action( 'init', function() {
                       </span>
                       <div
                         className={`p-2.5 rounded-xl border transition-colors ${isActive
-                            ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-400"
+                            ? "bg-[#023644]/50 border-[#126972]/40 text-[#22a0ad]"
                             : "bg-slate-900/60 border-slate-800 text-slate-400"
                           }`}
                       >
@@ -637,7 +660,7 @@ add_action( 'init', function() {
 
                     <ArrowRight
                       className={`w-4 h-4 transition-transform duration-300 ${isActive
-                          ? "text-emerald-400 translate-x-1"
+                          ? "text-[#22a0ad] translate-x-1"
                           : "text-slate-600 group-hover:text-slate-400"
                         }`}
                     />
@@ -645,7 +668,7 @@ add_action( 'init', function() {
 
                   <div className="mt-3.5 space-y-1 pl-1">
                     <h3
-                      className={`text-base sm:text-lg font-bold transition-colors ${isActive ? "text-emerald-400" : "text-slate-200 group-hover:text-slate-100"
+                      className={`text-base sm:text-lg font-bold transition-colors ${isActive ? "text-[#22a0ad]" : "text-slate-200 group-hover:text-slate-100"
                         }`}
                     >
                       {svc.title}
@@ -673,8 +696,8 @@ add_action( 'init', function() {
                 {/* Header Info */}
                 <div className="space-y-4">
                   <div className="flex items-center justify-between pb-3 border-b border-slate-800/80">
-                    <div className="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
-                      <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <div className="inline-flex items-center space-x-2 bg-[#023644]/50 border border-[#126972]/40 text-[#22a0ad] px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
+                      <span className="w-2 h-2 rounded-full bg-[#126972] animate-pulse" />
                       <span>Phase 0{activeServiceIndex + 1} Specification</span>
                     </div>
 
@@ -687,7 +710,7 @@ add_action( 'init', function() {
                     <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-100">
                       {services[activeServiceIndex].title}
                     </h3>
-                    <p className="text-xs sm:text-sm font-semibold text-emerald-400 mt-1">
+                    <p className="text-xs sm:text-sm font-semibold text-[#22a0ad] mt-1">
                       {services[activeServiceIndex].tagline}
                     </p>
                   </div>
@@ -708,7 +731,7 @@ add_action( 'init', function() {
                         key={hIdx}
                         className="text-xs text-slate-300 flex items-start gap-2 bg-slate-900/60 p-2.5 rounded-xl border border-slate-800/80"
                       >
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[#22a0ad] shrink-0 mt-0.5" />
                         <span className="leading-tight">{item}</span>
                       </li>
                     ))}
@@ -719,10 +742,10 @@ add_action( 'init', function() {
                 <div className="bg-[#0b1329] border border-slate-800 rounded-xl overflow-hidden font-mono text-xs">
                   <div className="bg-slate-900/90 px-3.5 py-2 border-b border-slate-800 flex items-center justify-between text-slate-400 text-[11px]">
                     <div className="flex items-center space-x-2">
-                      <Terminal className="w-3.5 h-3.5 text-emerald-400" />
+                      <Terminal className="w-3.5 h-3.5 text-[#22a0ad]" />
                       <span>service-spec.config.ts</span>
                     </div>
-                    <span className="text-[10px] text-emerald-400">TypeScript</span>
+                    <span className="text-[10px] text-[#22a0ad]">TypeScript</span>
                   </div>
                   <pre className="p-3.5 text-slate-300 overflow-x-auto text-[11px] leading-relaxed">
                     <code>{services[activeServiceIndex].codeSnippet}</code>
@@ -755,7 +778,7 @@ add_action( 'init', function() {
         className="space-y-6 z-10 relative overflow-hidden"
       >
         <div className="text-left space-y-2">
-          <h2 className="text-xs font-bold text-emerald-400 tracking-wider uppercase">
+          <h2 className="text-xs font-bold text-[#22a0ad] tracking-wider uppercase">
             Technical Stack
           </h2>
           <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-100">
@@ -771,12 +794,12 @@ add_action( 'init', function() {
               {[...row1Stack, ...row1Stack, ...row1Stack, ...row1Stack].map((tech, idx) => (
                 <div
                   key={idx}
-                  className="p-3 px-4 sm:px-5 bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 rounded-xl transition-all group flex items-center space-x-3 shadow-md shrink-0 cursor-default"
+                  className="p-3 px-4 sm:px-5 bg-[#1e293b] border border-slate-800 hover:border-[#126972]/50 rounded-xl transition-all group flex items-center space-x-3 shadow-md shrink-0 cursor-default"
                 >
-                  <div className="p-2 bg-slate-900/80 rounded-lg shrink-0 group-hover:bg-emerald-500/10 transition-colors">
+                  <div className="p-2 bg-slate-900/80 rounded-lg shrink-0 group-hover:bg-[#023644]/50 transition-colors">
                     {tech.icon}
                   </div>
-                  <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-emerald-400 transition-colors whitespace-nowrap">
+                  <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-[#22a0ad] transition-colors whitespace-nowrap">
                     {tech.name}
                   </span>
                 </div>
@@ -790,12 +813,12 @@ add_action( 'init', function() {
               {[...row2Stack, ...row2Stack, ...row2Stack, ...row2Stack].map((tech, idx) => (
                 <div
                   key={idx}
-                  className="p-3 px-4 sm:px-5 bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 rounded-xl transition-all group flex items-center space-x-3 shadow-md shrink-0 cursor-default"
+                  className="p-3 px-4 sm:px-5 bg-[#1e293b] border border-slate-800 hover:border-[#126972]/50 rounded-xl transition-all group flex items-center space-x-3 shadow-md shrink-0 cursor-default"
                 >
-                  <div className="p-2 bg-slate-900/80 rounded-lg shrink-0 group-hover:bg-emerald-500/10 transition-colors">
+                  <div className="p-2 bg-slate-900/80 rounded-lg shrink-0 group-hover:bg-[#023644]/50 transition-colors">
                     {tech.icon}
                   </div>
-                  <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-emerald-400 transition-colors whitespace-nowrap">
+                  <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-[#22a0ad] transition-colors whitespace-nowrap">
                     {tech.name}
                   </span>
                 </div>
@@ -815,7 +838,7 @@ add_action( 'init', function() {
       >
         <div className="flex items-center justify-between gap-4">
           <div className="text-left space-y-2">
-            <h2 className="text-xs font-bold text-emerald-400 tracking-wider uppercase">
+            <h2 className="text-xs font-bold text-[#22a0ad] tracking-wider uppercase">
               Portfolio Highlight
             </h2>
             <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-100">
@@ -825,7 +848,7 @@ add_action( 'init', function() {
 
           <Link
             href="/projects"
-            className="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 uppercase tracking-wider"
+            className="text-xs font-bold text-[#22a0ad] hover:text-cyan-300 flex items-center gap-1 uppercase tracking-wider"
           >
             View All <ArrowRight className="w-3.5 h-3.5" />
           </Link>
@@ -851,7 +874,7 @@ add_action( 'init', function() {
         className="space-y-8 z-10 relative"
       >
         <div className="text-left space-y-2">
-          <h2 className="text-xs font-bold text-emerald-400 tracking-wider uppercase">
+          <h2 className="text-xs font-bold text-[#22a0ad] tracking-wider uppercase">
             Workflow
           </h2>
           <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-100">
@@ -866,7 +889,7 @@ add_action( 'init', function() {
                 key={idx}
                 onClick={() => setActiveStep(idx)}
                 className={`p-4 border rounded-xl text-left transition-all flex items-center justify-between cursor-pointer ${activeStep === idx
-                    ? "border-emerald-500/60 bg-emerald-500/10 text-emerald-400 font-semibold"
+                    ? "border-[#126972]/80 bg-[#023644]/60 text-[#22a0ad] font-semibold"
                     : "border-slate-800 bg-[#1e293b] text-slate-400 hover:text-slate-200"
                   }`}
               >
@@ -894,7 +917,7 @@ add_action( 'init', function() {
                   transition={{ duration: 0.2 }}
                   className="space-y-4"
                 >
-                  <div className="flex items-center space-x-2 text-emerald-400">
+                  <div className="flex items-center space-x-2 text-[#22a0ad]">
                     {workflowSteps[activeStep].icon}
                     <span className="text-xs font-bold uppercase tracking-wider">
                       Phase 0{activeStep + 1}
@@ -923,11 +946,11 @@ add_action( 'init', function() {
       >
         {/* Section Header (Outside above cards, matching all other sections) */}
         <div className="text-left space-y-2">
-          <h2 className="text-xs font-bold text-emerald-400 tracking-wider uppercase">
+          <h2 className="text-xs font-bold text-[#22a0ad] tracking-wider uppercase">
             Get In Touch
           </h2>
           <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-100">
-            Ready To Build Your <span className="text-emerald-400">Next Project?</span>
+            Ready To Build Your <span className="text-[#22a0ad]">Next Project?</span>
           </p>
           <p className="text-slate-400 text-xs sm:text-sm max-w-xl leading-relaxed">
             Let&apos;s build scalable, high-speed digital solutions together. Reach out to discuss project details and technical requirements.
@@ -951,7 +974,7 @@ add_action( 'init', function() {
                     placeholder="e.g. John Doe"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-slate-900/90 border border-slate-800 focus:border-emerald-500/80 focus:ring-1 focus:ring-emerald-500/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-100 placeholder-slate-500 outline-none transition-all"
+                    className="w-full bg-slate-900/90 border border-slate-800 focus:border-[#126972] focus:ring-1 focus:ring-[#126972]/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-100 placeholder-slate-500 outline-none transition-all"
                   />
                 </div>
 
@@ -966,7 +989,7 @@ add_action( 'init', function() {
                     placeholder="e.g. john@example.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-slate-900/90 border border-slate-800 focus:border-emerald-500/80 focus:ring-1 focus:ring-emerald-500/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-100 placeholder-slate-500 outline-none transition-all"
+                    className="w-full bg-slate-900/90 border border-slate-800 focus:border-[#126972] focus:ring-1 focus:ring-[#126972]/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-100 placeholder-slate-500 outline-none transition-all"
                   />
                 </div>
               </div>
@@ -979,7 +1002,7 @@ add_action( 'init', function() {
                 <select
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className="w-full bg-slate-900/90 border border-slate-800 focus:border-emerald-500/80 focus:ring-1 focus:ring-emerald-500/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-100 outline-none transition-all cursor-pointer"
+                  className="w-full bg-slate-900/90 border border-slate-800 focus:border-[#126972] focus:ring-1 focus:ring-[#126972]/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-100 outline-none transition-all cursor-pointer"
                 >
                   <option value="Full-Stack Application">Full-Stack Web Application (Next.js / Node.js)</option>
                   <option value="WordPress Theme or Plugin">WordPress Custom Theme or Plugin Architecture</option>
@@ -1000,7 +1023,7 @@ add_action( 'init', function() {
                   placeholder="Tell me about your project goals, required tech stack, timeline, or any questions..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full bg-slate-900/90 border border-slate-800 focus:border-emerald-500/80 focus:ring-1 focus:ring-emerald-500/50 rounded-xl p-4 text-xs sm:text-sm text-slate-100 placeholder-slate-500 outline-none transition-all resize-none"
+                  className="w-full bg-slate-900/90 border border-slate-800 focus:border-[#126972] focus:ring-1 focus:ring-[#126972]/50 rounded-xl p-4 text-xs sm:text-sm text-slate-100 placeholder-slate-500 outline-none transition-all resize-none"
                 />
               </div>
 
@@ -1009,7 +1032,7 @@ add_action( 'init', function() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 px-6 bg-emerald-500 hover:bg-emerald-400 disabled:opacity-50 text-slate-950 font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all shadow-lg flex items-center justify-center space-x-2 cursor-pointer"
+                  className="w-full py-3.5 px-6 bg-gradient-to-r from-[#126972] to-[#22a0ad] hover:from-[#18838f] hover:to-[#2bc0d0] text-white disabled:opacity-50 font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-all shadow-lg flex items-center justify-center space-x-2 cursor-pointer"
                 >
                   {isSubmitting ? (
                     <span>Sending Message...</span>
@@ -1023,7 +1046,7 @@ add_action( 'init', function() {
               </div>
 
               {submitStatus === "success" && (
-                <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-400 text-xs font-semibold text-center">
+                <div className="p-3 bg-[#023644]/60 border border-[#126972]/40 rounded-xl text-[#22a0ad] text-xs font-semibold text-center">
                   ✓ Thank you! Your message has been sent successfully. I will get back to you shortly!
                 </div>
               )}
@@ -1031,15 +1054,15 @@ add_action( 'init', function() {
               {/* Security & Response Guarantee Badges - Directly below submit button */}
               <div className="grid grid-cols-3 gap-2 pt-3.5 mt-3 border-t border-slate-800/80 text-center text-[11px] font-medium text-slate-400">
                 <div className="flex items-center justify-center space-x-1">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#22a0ad] shrink-0" />
                   <span>100% Privacy</span>
                 </div>
                 <div className="flex items-center justify-center space-x-1">
-                  <TrendingUp className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <TrendingUp className="w-3.5 h-3.5 text-[#22a0ad] shrink-0" />
                   <span>Fast Response</span>
                 </div>
                 <div className="flex items-center justify-center space-x-1">
-                  <Lock className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <Lock className="w-3.5 h-3.5 text-[#22a0ad] shrink-0" />
                   <span>No Spam</span>
                 </div>
               </div>
@@ -1054,13 +1077,13 @@ add_action( 'init', function() {
                 <div className="flex items-center space-x-2">
                   <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
                   <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
-                  <span className="w-3 h-3 rounded-full bg-emerald-500/80 inline-block" />
+                  <span className="w-3 h-3 rounded-full bg-[#126972] inline-block" />
                 </div>
                 <span className="text-[11px] text-slate-400 font-mono flex items-center gap-1.5">
-                  <Code className="w-3.5 h-3.5 text-emerald-400" />
+                  <Code className="w-3.5 h-3.5 text-[#22a0ad]" />
                   <span>contact-session.ts</span>
                 </span>
-                <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                <span className="text-[10px] text-[#22a0ad] bg-[#023644]/50 px-2 py-0.5 rounded border border-[#126972]/40">
                   TypeScript
                 </span>
               </div>
@@ -1069,7 +1092,7 @@ add_action( 'init', function() {
               <div className="p-4 sm:p-5 space-y-3 leading-relaxed flex-grow overflow-x-auto bg-[#070d1e]">
                 <div className="text-slate-500 italic">{"// Developer Contact Config"}</div>
                 <div>
-                  <span className="text-purple-400">import</span> &#123; <span className="text-emerald-400">Engineer</span> &#125; <span className="text-purple-400">from</span> <span className="text-amber-300">&quot;@arfan/core&quot;</span>;
+                  <span className="text-purple-400">import</span> &#123; <span className="text-[#22a0ad]">Engineer</span> &#125; <span className="text-purple-400">from</span> <span className="text-amber-300">&quot;@arfan/core&quot;</span>;
                 </div>
                 <br />
                 <div>
@@ -1083,7 +1106,7 @@ add_action( 'init', function() {
                     <span className="text-slate-400">role:</span> <span className="text-amber-300">&quot;Full-Stack Engineer &amp; WP Architect&quot;</span>,
                   </div>
                   <div>
-                    <span className="text-slate-400">availability:</span> <span className="text-emerald-400">&quot;Immediate / Open for Hire&quot;</span>,
+                    <span className="text-slate-400">availability:</span> <span className="text-[#22a0ad]">&quot;Immediate / Open for Hire&quot;</span>,
                   </div>
                   <div>
                     <span className="text-slate-400">email:</span> <span className="text-sky-300">&quot;arfan18@cse.pstu.ac.bd&quot;</span>,
@@ -1095,7 +1118,7 @@ add_action( 'init', function() {
                     <span className="text-slate-400">location:</span> <span className="text-amber-300">&quot;Dhaka &amp; Patuakhali, Bangladesh&quot;</span>,
                   </div>
                   <div>
-                    <span className="text-slate-400">avgResponseTime:</span> <span className="text-emerald-400">&quot;&lt; 4 Hours&quot;</span>,
+                    <span className="text-slate-400">avgResponseTime:</span> <span className="text-[#22a0ad]">&quot;&lt; 4 Hours&quot;</span>,
                   </div>
                   <div>
                     <span className="text-slate-400">preferredStack:</span> [
@@ -1105,7 +1128,7 @@ add_action( 'init', function() {
                   </div>
                   <div>],</div>
                   <div>
-                    <span className="text-slate-400">status:</span> <span className="text-emerald-400">&quot;online&quot;</span>
+                    <span className="text-slate-400">status:</span> <span className="text-[#22a0ad]">&quot;online&quot;</span>
                   </div>
                 </div>
                 <div>&#125;;</div>
@@ -1116,7 +1139,7 @@ add_action( 'init', function() {
               {/* Terminal Footer Status Bar */}
               <div className="bg-[#0f172a] px-4 py-2.5 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
                 <div className="flex items-center space-x-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-[#126972] animate-pulse" />
                   <span className="text-slate-300">Port 443 | SSL Secure</span>
                 </div>
                 <span className="text-slate-500">GMT+6 Bangladesh</span>

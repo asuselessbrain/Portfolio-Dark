@@ -14,8 +14,8 @@ export default function Footer() {
           <div className="md:col-span-6 space-y-4">
             <Link href="/" className="inline-block group">
               <span className="text-xl font-black text-slate-100 tracking-tight flex items-center gap-1.5">
-                <span className="text-emerald-400 font-mono text-lg">&lt;/&gt;</span>
-                <span>Arfan<span className="text-emerald-400">.dev</span></span>
+                <span className="text-[#22a0ad] font-mono text-lg">&lt;/&gt;</span>
+                <span>Arfan<span className="text-[#22a0ad]">.dev</span></span>
               </span>
             </Link>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-sans max-w-md">
@@ -28,7 +28,7 @@ export default function Footer() {
                 href="https://github.com/asuselessbrain"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-all hover:scale-105"
+                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-[#126972] flex items-center justify-center text-slate-300 hover:text-[#22a0ad] transition-all hover:scale-105"
                 title="GitHub Profile"
                 aria-label="Arfan Ahmed on GitHub"
               >
@@ -38,7 +38,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/arfan-ahmed40"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-all hover:scale-105"
+                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-[#126972] flex items-center justify-center text-slate-300 hover:text-[#22a0ad] transition-all hover:scale-105"
                 title="LinkedIn Profile"
                 aria-label="Arfan Ahmed on LinkedIn"
               >
@@ -48,7 +48,7 @@ export default function Footer() {
                 href="https://www.facebook.com/arfan.arfanahmed.73"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-all hover:scale-105"
+                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-[#126972] flex items-center justify-center text-slate-300 hover:text-[#22a0ad] transition-all hover:scale-105"
                 title="Facebook Profile"
                 aria-label="Arfan Ahmed on Facebook"
               >
@@ -58,7 +58,7 @@ export default function Footer() {
                 href="https://wa.me/8801615391684"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-all hover:scale-105"
+                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-[#126972] flex items-center justify-center text-slate-300 hover:text-[#22a0ad] transition-all hover:scale-105"
                 title="WhatsApp Chat"
                 aria-label="Chat with Arfan Ahmed on WhatsApp"
               >
@@ -66,7 +66,7 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:arfan18@cse.pstu.ac.bd"
-                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-emerald-500/50 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-all hover:scale-105"
+                className="w-9 h-9 rounded-xl bg-[#1e293b] border border-slate-800 hover:border-[#126972] flex items-center justify-center text-slate-300 hover:text-[#22a0ad] transition-all hover:scale-105"
                 title="Send Email"
                 aria-label="Email Arfan Ahmed"
               >
@@ -77,27 +77,27 @@ export default function Footer() {
 
           {/* Column 2: Navigation Links (md:col-span-3) */}
           <div className="md:col-span-3 space-y-4">
-            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider border-l-2 border-emerald-400 pl-2.5">
+            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider border-l-2 border-[#126972] pl-2.5">
               Navigation
             </h3>
             <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
               <li>
-                <Link href="/" className="hover:text-emerald-400 transition-colors inline-block">
+                <Link href="/" className="hover:text-[#22a0ad] transition-colors inline-block">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-emerald-400 transition-colors inline-block">
+                <Link href="/about" className="hover:text-[#22a0ad] transition-colors inline-block">
                   About Me
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="hover:text-emerald-400 transition-colors inline-block">
+                <Link href="/projects" className="hover:text-[#22a0ad] transition-colors inline-block">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-emerald-400 transition-colors inline-block">
+                <Link href="/contact" className="hover:text-[#22a0ad] transition-colors inline-block">
                   Contact
                 </Link>
               </li>
@@ -106,7 +106,7 @@ export default function Footer() {
 
           {/* Column 3: Services (md:col-span-3) */}
           <div className="md:col-span-3 space-y-4">
-            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider border-l-2 border-emerald-400 pl-2.5">
+            <h3 className="text-xs font-bold text-slate-200 uppercase tracking-wider border-l-2 border-[#126972] pl-2.5">
               Services
             </h3>
             <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
@@ -132,8 +132,8 @@ export default function Footer() {
             Made with <span className="text-red-500">❤️</span> by <strong className="text-slate-200 font-bold">Arfan Ahmed</strong> — © {new Date().getFullYear()} All rights reserved.
           </div>
 
-          <div className="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-[11px] font-semibold">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <div className="inline-flex items-center space-x-2 bg-[#023644]/50 border border-[#126972]/40 text-[#22a0ad] px-3 py-1 rounded-full text-[11px] font-semibold">
+            <span className="w-2 h-2 rounded-full bg-[#126972] animate-pulse" />
             <span>AVAILABLE FOR HIRE</span>
           </div>
         </div>

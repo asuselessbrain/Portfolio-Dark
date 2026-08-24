@@ -99,8 +99,8 @@ export default function ContactClient() {
         transition={{ duration: 0.4 }}
         className="space-y-3"
       >
-        <div className="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+        <div className="inline-flex items-center space-x-2 bg-[#023644]/50 border border-[#126972]/40 text-[#22a0ad] px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
+          <span className="w-2 h-2 rounded-full bg-[#126972] animate-pulse" />
           <span>Get In Touch</span>
         </div>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-100">
@@ -123,7 +123,7 @@ export default function ContactClient() {
         <div className="lg:col-span-7">
           <div className="bg-[#1e293b] p-6 sm:p-8 border border-slate-800 rounded-2xl shadow-sm">
             <div className="flex items-center space-x-2 border-b border-slate-800 pb-4 mb-6">
-              <Send className="w-4 h-4 text-emerald-400" />
+              <Send className="w-4 h-4 text-[#22a0ad]" />
               <h2 className="text-sm font-bold text-slate-200 uppercase tracking-wider">
                 Send a Message
               </h2>
@@ -131,7 +131,7 @@ export default function ContactClient() {
 
             {status === "success" ? (
               <div className="py-8 text-center space-y-4">
-                <CheckCircle2 className="w-14 h-14 text-emerald-400 mx-auto" />
+                <CheckCircle2 className="w-14 h-14 text-[#22a0ad] mx-auto" />
                 <h3 className="text-lg font-bold text-slate-100">
                   Message Sent Successfully!
                 </h3>
@@ -141,7 +141,7 @@ export default function ContactClient() {
                 <div className="pt-2">
                   <button
                     onClick={handleResetForm}
-                    className="px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-lg transition-all"
+                    className="px-5 py-2.5 bg-gradient-to-r from-[#126972] to-[#22a0ad] hover:from-[#18838f] hover:to-[#2bc0d0] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all shadow-md"
                   >
                     Send Another Message
                   </button>
@@ -167,7 +167,7 @@ export default function ContactClient() {
                     className={`w-full bg-slate-900 border px-4 py-2.5 rounded-lg text-xs text-slate-100 outline-none transition-all ${
                       errors.name
                         ? "border-red-500 focus:border-red-500"
-                        : "border-slate-800 focus:border-emerald-500/70"
+                        : "border-slate-800 focus:border-[#126972]"
                     }`}
                     placeholder="Enter your name"
                   />
@@ -196,7 +196,7 @@ export default function ContactClient() {
                     className={`w-full bg-slate-900 border px-4 py-2.5 rounded-lg text-xs text-slate-100 outline-none transition-all ${
                       errors.email
                         ? "border-red-500 focus:border-red-500"
-                        : "border-slate-800 focus:border-emerald-500/70"
+                        : "border-slate-800 focus:border-[#126972]"
                     }`}
                     placeholder="name@company.com"
                   />
@@ -224,7 +224,7 @@ export default function ContactClient() {
                     className={`w-full bg-slate-900 border px-4 py-2.5 rounded-lg text-xs text-slate-100 outline-none resize-none transition-all ${
                       errors.message
                         ? "border-red-500 focus:border-red-500"
-                        : "border-slate-800 focus:border-emerald-500/70"
+                        : "border-slate-800 focus:border-[#126972]"
                     }`}
                     placeholder="Describe your project, timeframe, and goals..."
                   />
@@ -250,11 +250,11 @@ export default function ContactClient() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                  className="w-full py-3.5 bg-gradient-to-r from-[#126972] to-[#22a0ad] hover:from-[#18838f] hover:to-[#2bc0d0] text-white font-bold text-xs uppercase tracking-wider rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md"
                 >
                   {status === "submitting" ? (
                     <>
-                      <span className="w-3.5 h-3.5 border-2 border-slate-950 border-t-transparent rounded-full animate-spin" />
+                      <span className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin" />
                       <span>Sending Message...</span>
                     </>
                   ) : (
@@ -280,14 +280,14 @@ export default function ContactClient() {
               {/* Email */}
               <a
                 href="mailto:arfan18@cse.pstu.ac.bd"
-                className="flex items-center gap-3.5 p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition-all group"
+                className="flex items-center gap-3.5 p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-[#126972]/50 transition-all group"
               >
-                <div className="p-2.5 bg-slate-800 rounded-lg text-emerald-400">
+                <div className="p-2.5 bg-slate-800 rounded-lg text-[#22a0ad]">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <span className="text-[11px] font-semibold text-slate-400 uppercase block">Email Address</span>
-                  <span className="text-xs font-semibold text-slate-200 group-hover:text-emerald-400 transition-colors">
+                  <span className="text-xs font-semibold text-slate-200 group-hover:text-[#22a0ad] transition-colors">
                     arfan18@cse.pstu.ac.bd
                   </span>
                 </div>
@@ -298,14 +298,14 @@ export default function ContactClient() {
                 href="https://www.linkedin.com/in/arfan-ahmed40"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3.5 p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition-all group"
+                className="flex items-center gap-3.5 p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-[#126972]/50 transition-all group"
               >
-                <div className="p-2.5 bg-slate-800 rounded-lg text-emerald-400">
+                <div className="p-2.5 bg-slate-800 rounded-lg text-[#22a0ad]">
                   <FaLinkedinIn className="w-4 h-4" />
                 </div>
                 <div>
                   <span className="text-[11px] font-semibold text-slate-400 uppercase block">LinkedIn Profile</span>
-                  <span className="text-xs font-semibold text-slate-200 group-hover:text-emerald-400 transition-colors">
+                  <span className="text-xs font-semibold text-slate-200 group-hover:text-[#22a0ad] transition-colors">
                     linkedin.com/in/arfan-ahmed40
                   </span>
                 </div>
@@ -316,14 +316,14 @@ export default function ContactClient() {
                 href="https://github.com/asuselessbrain"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3.5 p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition-all group"
+                className="flex items-center gap-3.5 p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-[#126972]/50 transition-all group"
               >
-                <div className="p-2.5 bg-slate-800 rounded-lg text-emerald-400">
+                <div className="p-2.5 bg-slate-800 rounded-lg text-[#22a0ad]">
                   <FaGithub className="w-4 h-4" />
                 </div>
                 <div>
                   <span className="text-[11px] font-semibold text-slate-400 uppercase block">GitHub Repository</span>
-                  <span className="text-xs font-semibold text-slate-200 group-hover:text-emerald-400 transition-colors">
+                  <span className="text-xs font-semibold text-slate-200 group-hover:text-[#22a0ad] transition-colors">
                     github.com/asuselessbrain
                   </span>
                 </div>
@@ -334,14 +334,14 @@ export default function ContactClient() {
                 href="https://wa.me/8801615391684"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3.5 p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition-all group"
+                className="flex items-center gap-3.5 p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-[#126972]/50 transition-all group"
               >
-                <div className="p-2.5 bg-slate-800 rounded-lg text-emerald-400">
+                <div className="p-2.5 bg-slate-800 rounded-lg text-[#22a0ad]">
                   <FaWhatsapp className="w-4 h-4" />
                 </div>
                 <div>
                   <span className="text-[11px] font-semibold text-slate-400 uppercase block">WhatsApp / Phone</span>
-                  <span className="text-xs font-semibold text-slate-200 group-hover:text-emerald-400 transition-colors">
+                  <span className="text-xs font-semibold text-slate-200 group-hover:text-[#22a0ad] transition-colors">
                     +880 1615-391684
                   </span>
                 </div>

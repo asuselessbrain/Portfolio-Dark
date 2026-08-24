@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cyber-cyan: #10b981;
-  --color-neon-purple: #34d399;
-  --color-matrix-green: #10b981;
-  --color-cyber-blue: #059669;
+  --color-cyber-cyan: #126972;
+  --color-neon-purple: #22a0ad;
+  --color-matrix-green: #126972;
+  --color-cyber-blue: #023644;
   --color-cyber-dark: #0f172a;
   --color-panel-bg: #1e293b;
   --color-panel-border: rgba(255, 255, 255, 0.08);
@@ -26,8 +26,8 @@
   --panel-border: rgba(255, 255, 255, 0.08);
   --card-bg: #1e293b;
   --card-border: rgba(255, 255, 255, 0.08);
-  --brand-primary: #10b981;
-  --brand-hover: #34d399;
+  --brand-primary: #126972;
+  --brand-hover: #023644;
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #10b981;
+  background: #126972;
 }
 
 /* Subtle Cards & Panels */
