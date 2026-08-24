@@ -309,5 +309,148 @@
                 "On-page SEO (meta titles, descriptions) targeting local airport transfer and chauffeur searches."
             ]
         }
+    },
+    {
+        "id": "proj_10",
+        "image": "/images/projects/proj_10.webp",
+        "title": "Met Club E-Learning Platform — Gamified Disaster Preparedness Learning App",
+        "category": "Full Stack",
+        "tags": [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "Express",
+            "Prisma",
+            "PostgreSQL",
+            "Framer Motion",
+            "Gamification",
+            "E-Learning",
+            "Interactive UI",
+            "NGO"
+        ],
+        "desc": "A full-stack, story-driven e-learning web platform commissioned under Save the Children, built to teach children weather, climate, and disaster-preparedness concepts through interactive stories, animated illustrations, and gamified quizzes. The platform is now featured on the Bangladesh Meteorological Department (BMD) website as an official learning resource.",
+        "demoUrl": "https://www.meteorologyclub.com/",
+        "gitUrl": "",
+        "problem": "Save the Children needed a structured, engaging way to teach children a large, technical disaster-risk-reduction curriculum (36 topics across weather, hydrology, geology, and disaster response) without it feeling like a dry textbook. The content needed to translate story-based, illustration-heavy source material into an interactive digital experience with quizzes, drag-and-drop activities, hotspot clicks, and sequencing games — built to a standard credible enough to be featured on a government meteorological agency's website.",
+        "solution": "Built a full-stack learning platform from scratch under Save the Children, with a React + TypeScript frontend using Framer Motion (and other animation libraries) to bring the story characters and scenes to life, and a Node.js/Express backend with Prisma ORM on PostgreSQL to handle structured content delivery, module/session sequencing, and quiz-result data. Converted the source curriculum (36 sub-topics grouped into 9 core modules — weather & climate, water systems, ecosystems, earth structure, water/weather disasters, geo/fire disasters, risk mapping, climate change, preparedness & post-disaster response) into interactive lessons, implementing multiple gamified question types (hotspot click, true/false, fill-in-the-blank, drag-and-drop matching, sequence arrangement, and multiple choice) matching the original instructional design.",
+        "result": "Shipped a live, fully functional gamified learning platform (meteorologyclub.com) that delivers the entire 3-month, 15-session disaster-preparedness curriculum through interactive stories and mini-games. The project was adopted by the Bangladesh Meteorological Department (BMD) and is now linked/featured on the official BMD website as a recognized disaster-education resource, with a type-safe React frontend and a scalable Express/Prisma/PostgreSQL backend supporting ongoing curriculum expansion.",
+        "archDetails": {
+            "frontend": "React with TypeScript for type-safe component development, animation libraries (e.g. Framer Motion) for story transitions, character animations, and interactive quiz elements (hotspot clicks, drag-and-drop, sequencing).",
+            "backend": "Node.js with Express serving REST APIs for curriculum content, session/module structure, and quiz submission handling.",
+            "database": "PostgreSQL managed through Prisma ORM, modeling modules, sessions, topics, learning outcomes, and quiz/question data for structured content delivery.",
+            "detailsList": [
+                "Commissioned under Save the Children as part of a child-focused disaster-risk-reduction education initiative.",
+                "Now featured/linked on the official Bangladesh Meteorological Department (BMD) website as a recognized learning resource.",
+                "Converted a 36-topic, 9-module disaster-preparedness curriculum into interactive digital lessons.",
+                "Implemented six gamified question formats: hotspot click, true/false, fill-in-the-blank, drag-and-drop matching, sequence arrangement, and multiple choice.",
+                "Story-driven lesson design with animated character illustrations for each topic (e.g. weather vs. climate, floods, cyclones, storm surge, earthquakes, landslides).",
+                "Type-safe full-stack architecture using TypeScript across the React frontend.",
+                "Prisma + PostgreSQL schema for structured storage of modules, sessions, topics, and quiz content.",
+                "Express REST API layer connecting the frontend to curriculum and assessment data."
+            ]
+        }
+    },
+    {
+        "id": "proj_11",
+        "image": "/images/projects/proj_11.webp",
+        "title": "Blink ESS — Energy Storage Company Website Redesign",
+        "category": "webflow",
+        "tags": [
+            "Webflow",
+            "Responsive Design",
+            "B2B / Industrial",
+            "Content Strategy",
+            "Lead Generation",
+            "Custom Interactive Tools"
+        ],
+        "desc": "A full structural and content redesign for a Canadian commercial & industrial Battery Energy Storage Systems (BESS) company, transforming a basic corporate site into a multi-page platform with a dedicated media/press hub, an interactive lease-finance calculator, and a certified contractor directory.",
+        "demoUrl": "https://www.blinkess.com/old-home-3",
+        "gitUrl": "",
+        "problem": "The client's existing Webflow site had a shallow structure with no dedicated space for press/media content, no way to showcase their certified installer network, a thin partner section, and content that didn't clearly communicate their turnkey financing model. The site also needed to be fully responsive and required updated brand/company copy across pages.",
+        "solution": "Rebuilt the site architecture on Webflow with new dedicated pages — Media Room (press releases, image library, company milestones, downloadable media kit), Contractor Directory (searchable installer network with a Silver/Gold/Platinum certification tier system), and an expanded Partners page — alongside a redesigned homepage featuring a custom-built Lease/Finance/Cash payment calculator widget. Integrated the client-provided About copy, updated contact details, and added the three global office locations (Mississauga HQ, Las Vegas USA office, Shenzhen R&D hub) to the Company page. Restructured content across all pages for clearer readability and rebuilt navigation and layouts for full mobile responsiveness, using placeholder media blocks in sections awaiting final client assets.",
+        "result": "Delivered a fully responsive, multi-page corporate website with three new major sections (Media, Contractor Directory, expanded Partners), an interactive finance calculator for lease/finance/cash options, and a clearer information architecture — giving the client a scalable platform to publish press content, showcase their 122+ installer network, and support lead generation for their B2B storage business.",
+        "archDetails": {
+            "frontend": "Webflow visual builder with custom interactions and a JavaScript-driven lease/finance/cash payment calculator embedded on the homepage; responsive layouts rebuilt across desktop, tablet, and mobile breakpoints.",
+            "backend": "Webflow CMS collections powering the Media Room press releases/news feed and the Contractor Directory installer listings; native Webflow form handling for contact, installer applications, and newsroom signups.",
+            "database": "Webflow CMS collections for press releases, image library items, milestones, and contractor/installer profiles (tier, rating, project count, location).",
+            "detailsList": [
+                "New dedicated Media Room page: press releases, image library, company milestones timeline, and downloadable media/press kit.",
+                "New Contractor Directory page with Silver/Gold/Platinum certified-installer tier system and application flow.",
+                "Expanded Partners page showcasing the global partner/EPC network.",
+                "Custom interactive Lease / Finance / Cash payment calculator on the homepage.",
+                "Sitewide content and copy updates (About section, phone number, global office locations: Mississauga, Las Vegas, Shenzhen).",
+                "Full responsive rebuild across desktop, tablet, and mobile with placeholder media blocks for pending client assets."
+            ]
+        }
+    },
+    {
+        "id": "proj_12",
+        "image": "/images/projects/proj_12.webp",
+        "title": "LIVA Stays — Short-Term Rental Booking Platform with Guesty Integration",
+        "category": "wordpress",
+        "tags": [
+            "WordPress",
+            "Elementor",
+            "Elementor Pro",
+            "Guesty API",
+            "Booking Engine",
+            "SEO",
+            "Responsive Design",
+            "Multilingual"
+        ],
+        "desc": "A conversion-focused, mobile-first WordPress + Elementor website for LIVA Stays, a German serviced-apartment and short-term rental brand, built around a clear booking funnel and a live Guesty PMS integration for real-time availability and direct bookings.",
+        "demoUrl": "https://mustafa.pronizam.com/",
+        "gitUrl": "",
+        "problem": "The client, operating serviced apartments across five German cities, needed a modern direct-booking website to replace reliance on third-party portals. The site had to follow a strict Homepage → Listing → Detail → Booking funnel, embed the Guesty Booking Engine for live calendar/availability, present an interactive map of their actual locations, and feel like a professional, trustworthy hybrid hotel/apartment brand rather than a generic holiday-rental template — all while matching a specific external reference design.",
+        "solution": "Built the full site in WordPress with Elementor from an existing client wireframe, embedding the Guesty Search Bar Widget and Guesty Booking Engine (via Guesty's Open API using OAuth client credentials) so guests can search availability and book directly. Developed an interactive Germany map that filters and auto-scrolls to location-specific listings (Hamburg, Henstedt-Ulzburg, Schwerin, Norderstedt, Bremerhaven) pulled dynamically from Guesty, plus a dedicated long-term rental section, a bottom-sticky mobile booking bar, a tabbed Booking.com/Airbnb reviews widget, an FAQ section, and a full rebrand from the client's placeholder domain to the LIVA Stays identity. Iterated through nine rounds of client revisions covering layout density, mobile image grids, review consolidation, and UI polish based on ongoing feedback.",
+        "result": "Delivered a fully responsive, SEO-structured booking website with a working end-to-end direct-booking flow through Guesty, live multi-city listings, and a trust-building reviews and FAQ layer — taking the project from wireframe through multiple QC rounds and nine client revision cycles to a production site actively used for direct bookings.",
+        "archDetails": {
+            "frontend": "Elementor Pro page builder with custom sections for a sticky/bottom-anchored booking bar, an interactive SVG-based city map with click-to-filter listings, a swipeable two-row services grid, and a tabbed reviews carousel (Booking.com / Airbnb), refined across desktop and mobile through iterative QC.",
+            "backend": "WordPress core with Elementor Pro, integrated with Guesty's Booking Engine via embedded JS widget and Guesty's Open API (OAuth 2.0 client ID/secret) for fetching live listing data by location.",
+            "database": "Standard WordPress MySQL schema for pages/templates, with listing and availability data sourced live from Guesty's API rather than stored locally.",
+            "detailsList": [
+                "Live Guesty Booking Engine embed (calendar, availability, direct booking flow) via Guesty's Open API with OAuth client credentials.",
+                "Interactive Germany map with click-to-filter, auto-scroll-to-listings behavior for five real operating locations.",
+                "Bottom-sticky mobile booking bar with shadowed, premium-styled UI matching the client's brand refresh.",
+                "Dedicated long-term rental (Langzeitmiete) listings section separate from the short-stay booking funnel.",
+                "Tabbed guest reviews section pulling in both Booking.com and Airbnb ratings for trust-building.",
+                "FAQ section covering check-in, payment, invoicing, parking, cancellation, and corporate bookings.",
+                "Full rebrand (naming, logo, color system) from the client's original placeholder brand to LIVA Stays.",
+                "Nine rounds of iterative client revisions on layout density, mobile responsiveness, and conversion-focused copy."
+            ]
+        }
+    },
+    {
+        "id": "proj_13",
+        "image": "/images/projects/proj_13.webp",
+        "title": "Fresh Start Awareness — Nonprofit HTML to WordPress Conversion",
+        "category": "wordpress",
+        "tags": [
+            "WordPress",
+            "HTML to WordPress",
+            "Elementor",
+            "GoFundMe Integration",
+            "Contact Form",
+            "Responsive Design"
+        ],
+        "desc": "Converted a static HTML site for a student-led (HOSA/West Boca Raton High School) hygiene-awareness nonprofit into a fully editable WordPress site, connecting live donation and contact channels and structuring content into distinct, client-manageable pages.",
+        "demoUrl": "https://freshstartboca.org/",
+        "gitUrl": "",
+        "problem": "The client had a static HTML prototype hosted on Vercel with no CMS, meaning no way to edit content, swap images, or manage sections without a developer. The site also lacked a working donation flow, a way for partners to reach out, and any real page structure — everything lived on one page with placeholder content and no clear information architecture.",
+        "solution": "Rebuilt the static HTML site as a fully editable WordPress site on Hostinger, replacing the display fonts with more readable classic typography, and restructuring content into dedicated pages: Home, About, Our Work (Activities), Global Impact, Team, Updates (blog), and Contact. Connected the donation call-to-actions site-wide to the client's live GoFundMe campaign, and built a Contact page with a working inquiry form routed to the client's email along with a direct partners & collaborations mailto link. Replaced placeholder imagery with the client-supplied images from their shared drive, kept the original waterdrop logo mark, and added an Instagram link in the footer. Through a follow-up revision round, added an extra "coming soon" activity card to both the Home and Our Work activity grids, an additional highlight box on the Updates page, and swapped image positions under "Our Work" per client feedback.",
+        "result": "Delivered a live, fully client-editable WordPress site at freshstartboca.org with working donation and contact flows, structured multi-page navigation, impact stats (lives impacted, funds raised, campaigns run), and a activities/campaign feed — replacing a static single-page prototype with a maintainable site the student team can update on their own.",
+        "archDetails": {
+            "frontend": "Elementor-built page layouts (hero with impact stats, problem/statistics section, campaign cards, activity grid with a standing 'more coming soon' card) with classic readable typography replacing the original display fonts, and a consistent off-canvas mobile navigation.",
+            "backend": "WordPress core hosted on Hostinger, migrated from a static HTML/Vercel prototype, with page-based content structure (Home, About, Our Work, Global Impact, Team, Updates, Contact) for independent client editing.",
+            "database": "Standard WordPress MySQL schema for pages, media (client-supplied images replacing placeholders), and blog/updates posts.",
+            "detailsList": [
+                "Converted a static HTML/Vercel prototype into a fully editable multi-page WordPress site.",
+                "Replaced display fonts with readable classic typography across the site.",
+                "Connected all donation CTAs to the client's live GoFundMe campaign.",
+                "Built a Contact Us page with a working inquiry form plus a direct partners/collaboration email link.",
+                "Swapped in client-supplied imagery from their shared drive in place of placeholder assets, preserving the original waterdrop logo mark.",
+                "Added Instagram link, an extra 'more activities coming soon' card on Home and Our Work, and an additional highlight box on the Updates page in a follow-up revision round."
+            ]
+        }
     }
 ]
