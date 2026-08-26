@@ -54,7 +54,7 @@ export default function TypingText() {
       </h1>
       <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold min-h-[2.5rem] sm:min-h-[3rem] flex items-center">
         <span className="text-slate-100">a&nbsp;</span>
-        <span className="text-[#22a0ad] border-r-2 border-[#126972] animate-pulse pr-1">
+        <span className="text-cyan-400 border-r-2 border-[#126972] animate-pulse pr-1">
           {currentText || "\u00A0"}
         </span>
       </div>

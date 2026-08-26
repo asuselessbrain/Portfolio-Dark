@@ -228,7 +228,7 @@ export default function AboutClient() {
                 src="/arfan-ahmed.jpg"
                 alt="Arfan Ahmed — Full Stack Web Developer"
                 fill
-                sizes="(max-width: 768px) 100vw, 350px"
+                sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, 350px"
                 className="object-cover object-center"
                 priority
               />
@@ -272,32 +272,32 @@ export default function AboutClient() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-3">
             <div className="p-3.5 bg-[#1e293b] border border-slate-800 hover:border-[#126972]/50 rounded-xl flex items-center space-x-3 text-slate-200 shadow-md group transition-all">
-              <div className="w-9 h-9 rounded-lg bg-[#023644]/50 border border-[#126972]/40 flex items-center justify-center text-[#22a0ad] group-hover:scale-110 transition-transform shrink-0">
+              <div className="w-9 h-9 rounded-lg bg-[#023644]/70 border border-[#126972]/60 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform shrink-0" aria-hidden="true">
                 <Briefcase className="w-4 h-4" />
               </div>
               <div>
                 <span className="text-xs font-bold text-slate-100 block">Full-Stack Engineer</span>
-                <span className="text-[10px] text-slate-400 block font-medium">Next.js &amp; Node.js</span>
+                <span className="text-[10px] text-slate-300 block font-medium">Next.js &amp; Node.js</span>
               </div>
             </div>
 
             <div className="p-3.5 bg-[#1e293b] border border-slate-800 hover:border-[#126972]/50 rounded-xl flex items-center space-x-3 text-slate-200 shadow-md group transition-all">
-              <div className="w-9 h-9 rounded-lg bg-[#023644]/50 border border-[#126972]/40 flex items-center justify-center text-[#22a0ad] group-hover:scale-110 transition-transform shrink-0">
+              <div className="w-9 h-9 rounded-lg bg-[#023644]/70 border border-[#126972]/60 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform shrink-0" aria-hidden="true">
                 <Award className="w-4 h-4" />
               </div>
               <div>
                 <span className="text-xs font-bold text-slate-100 block">WordPress Architect</span>
-                <span className="text-[10px] text-slate-400 block font-medium">Themes &amp; Plugins</span>
+                <span className="text-[10px] text-slate-300 block font-medium">Themes &amp; Plugins</span>
               </div>
             </div>
 
             <div className="p-3.5 bg-[#1e293b] border border-slate-800 hover:border-[#126972]/50 rounded-xl flex items-center space-x-3 text-slate-200 shadow-md group transition-all">
-              <div className="w-9 h-9 rounded-lg bg-[#023644]/50 border border-[#126972]/40 flex items-center justify-center text-[#22a0ad] group-hover:scale-110 transition-transform shrink-0">
+              <div className="w-9 h-9 rounded-lg bg-[#023644]/70 border border-[#126972]/60 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform shrink-0" aria-hidden="true">
                 <GraduationCap className="w-4 h-4" />
               </div>
               <div>
                 <span className="text-xs font-bold text-slate-100 block">Performance Core</span>
-                <span className="text-[10px] text-slate-400 block font-medium">100% Type-Safe Code</span>
+                <span className="text-[10px] text-slate-300 block font-medium">100% Type-Safe Code</span>
               </div>
             </div>
           </div>
@@ -656,14 +656,14 @@ export default function AboutClient() {
                   className="p-3.5 bg-slate-900/60 border border-slate-800 rounded-xl hover:border-[#126972]/50 transition-all flex items-center justify-between gap-2 group"
                 >
                   <div className="flex items-center space-x-2.5 min-w-0">
-                    <div className="p-1.5 bg-slate-800/80 rounded-lg shrink-0 group-hover:scale-110 transition-transform">
+                    <div className="p-1.5 bg-slate-800/80 rounded-lg shrink-0 group-hover:scale-110 transition-transform" aria-hidden="true">
                       {skill.icon}
                     </div>
-                    <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-[#22a0ad] transition-colors truncate">
+                    <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-cyan-400 transition-colors truncate">
                       {skill.name}
                     </span>
                   </div>
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-600 shrink-0 group-hover:text-[#22a0ad] group-hover:translate-x-0.5 transition-all" />
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-600 shrink-0 group-hover:text-cyan-400 group-hover:translate-x-0.5 transition-all" aria-hidden="true" />
                 </div>
               ))}
             </motion.div>

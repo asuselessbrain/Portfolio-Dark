@@ -392,7 +392,7 @@ export const seoConfig = {
                   src="/arfan-ahmed.jpg"
                   alt="Arfan Ahmed — Full Stack Web Developer"
                   fill
-                  sizes="(max-width: 640px) 280px, 330px"
+                  sizes="(max-width: 640px) 280px, (max-width: 768px) 310px, 450px"
                   priority
                   className="object-cover object-center"
                 />
@@ -412,11 +412,11 @@ export const seoConfig = {
       >
         {/* Section Header */}
         <div className="text-left space-y-2">
-          <h2 className="text-xs font-bold text-[#22a0ad] tracking-wider uppercase">
+          <h2 className="text-xs font-bold text-cyan-400 tracking-wider uppercase">
             Who I Am
           </h2>
           <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-100">
-            About <span className="text-[#22a0ad]">Me</span>
+            About <span className="text-cyan-400">Me</span>
           </p>
         </div>
 
@@ -426,7 +426,7 @@ export const seoConfig = {
             {/* Left: Bio & Highlights */}
             <div className="lg:col-span-6 space-y-4">
               <h3 className="text-xl sm:text-2xl font-bold text-slate-100">
-                Full-Stack Engineer & <span className="text-[#22a0ad]">WordPress Architect</span>
+                Full-Stack Engineer & <span className="text-cyan-400">WordPress Architect</span>
               </h3>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans">
                 I specialize in building scalable web applications with Next.js, React, TypeScript, Node.js, PostgreSQL, and custom WordPress architectures. Focused on type safety, high speed performance, intuitive UX, and maintainable codebase structure.
@@ -434,19 +434,19 @@ export const seoConfig = {
 
               <div className="grid grid-cols-2 gap-3 pt-2">
                 <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl space-y-0.5">
-                  <span className="text-[11px] font-bold text-[#22a0ad] block uppercase tracking-wider">Frontend</span>
+                  <span className="text-[11px] font-bold text-cyan-400 block uppercase tracking-wider">Frontend</span>
                   <span className="text-xs text-slate-300 font-medium block">Next.js, React, TS, Tailwind</span>
                 </div>
                 <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl space-y-0.5">
-                  <span className="text-[11px] font-bold text-[#22a0ad] block uppercase tracking-wider">Backend</span>
+                  <span className="text-[11px] font-bold text-cyan-400 block uppercase tracking-wider">Backend</span>
                   <span className="text-xs text-slate-300 font-medium block">Node.js, Express, REST, GraphQL</span>
                 </div>
                 <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl space-y-0.5">
-                  <span className="text-[11px] font-bold text-[#22a0ad] block uppercase tracking-wider">Database</span>
+                  <span className="text-[11px] font-bold text-cyan-400 block uppercase tracking-wider">Database</span>
                   <span className="text-xs text-slate-300 font-medium block">PostgreSQL, MongoDB, Prisma</span>
                 </div>
                 <div className="p-3 bg-slate-900/60 border border-slate-800 rounded-xl space-y-0.5">
-                  <span className="text-[11px] font-bold text-[#22a0ad] block uppercase tracking-wider">CMS Core</span>
+                  <span className="text-[11px] font-bold text-cyan-400 block uppercase tracking-wider">CMS Core</span>
                   <span className="text-xs text-slate-300 font-medium block">WordPress, WooCommerce, Plugins</span>
                 </div>
               </div>
@@ -796,10 +796,10 @@ export const seoConfig = {
                   key={idx}
                   className="p-3 px-4 sm:px-5 bg-[#1e293b] border border-slate-800 hover:border-[#126972]/50 rounded-xl transition-all group flex items-center space-x-3 shadow-md shrink-0 cursor-default"
                 >
-                  <div className="p-2 bg-slate-900/80 rounded-lg shrink-0 group-hover:bg-[#023644]/50 transition-colors">
+                  <div className="p-2 bg-slate-900/80 rounded-lg shrink-0 group-hover:bg-[#023644]/50 transition-colors" aria-hidden="true">
                     {tech.icon}
                   </div>
-                  <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-[#22a0ad] transition-colors whitespace-nowrap">
+                  <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-cyan-400 transition-colors whitespace-nowrap">
                     {tech.name}
                   </span>
                 </div>
@@ -815,10 +815,10 @@ export const seoConfig = {
                   key={idx}
                   className="p-3 px-4 sm:px-5 bg-[#1e293b] border border-slate-800 hover:border-[#126972]/50 rounded-xl transition-all group flex items-center space-x-3 shadow-md shrink-0 cursor-default"
                 >
-                  <div className="p-2 bg-slate-900/80 rounded-lg shrink-0 group-hover:bg-[#023644]/50 transition-colors">
+                  <div className="p-2 bg-slate-900/80 rounded-lg shrink-0 group-hover:bg-[#023644]/50 transition-colors" aria-hidden="true">
                     {tech.icon}
                   </div>
-                  <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-[#22a0ad] transition-colors whitespace-nowrap">
+                  <span className="font-bold text-slate-100 text-xs sm:text-sm group-hover:text-cyan-400 transition-colors whitespace-nowrap">
                     {tech.name}
                   </span>
                 </div>
@@ -946,13 +946,13 @@ export const seoConfig = {
       >
         {/* Section Header (Outside above cards, matching all other sections) */}
         <div className="text-left space-y-2">
-          <h2 className="text-xs font-bold text-[#22a0ad] tracking-wider uppercase">
+          <h2 className="text-xs font-bold text-cyan-400 tracking-wider uppercase">
             Get In Touch
           </h2>
           <p className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-100">
-            Ready To Build Your <span className="text-[#22a0ad]">Next Project?</span>
+            Ready To Build Your <span className="text-cyan-400">Next Project?</span>
           </p>
-          <p className="text-slate-400 text-xs sm:text-sm max-w-xl leading-relaxed">
+          <p className="text-slate-300 text-xs sm:text-sm max-w-xl leading-relaxed">
             Let&apos;s build scalable, high-speed digital solutions together. Reach out to discuss project details and technical requirements.
           </p>
         </div>
@@ -965,10 +965,11 @@ export const seoConfig = {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Name */}
                 <div className="space-y-1.5 text-left">
-                  <label className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
+                  <label htmlFor="home-contact-name" className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
                     Your Name
                   </label>
                   <input
+                    id="home-contact-name"
                     type="text"
                     required
                     placeholder="e.g. John Doe"
@@ -980,10 +981,11 @@ export const seoConfig = {
 
                 {/* Email */}
                 <div className="space-y-1.5 text-left">
-                  <label className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
+                  <label htmlFor="home-contact-email" className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
                     Email Address
                   </label>
                   <input
+                    id="home-contact-email"
                     type="email"
                     required
                     placeholder="e.g. john@example.com"
@@ -996,10 +998,11 @@ export const seoConfig = {
 
               {/* Subject Dropdown */}
               <div className="space-y-1.5 text-left">
-                <label className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
+                <label htmlFor="home-contact-category" className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
                   Project Category
                 </label>
                 <select
+                  id="home-contact-category"
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   className="w-full bg-slate-900/90 border border-slate-800 focus:border-[#126972] focus:ring-1 focus:ring-[#126972]/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-slate-100 outline-none transition-all cursor-pointer"
@@ -1014,10 +1017,11 @@ export const seoConfig = {
 
               {/* Message */}
               <div className="space-y-1.5 text-left">
-                <label className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
+                <label htmlFor="home-contact-message" className="text-xs font-bold text-slate-300 uppercase tracking-wider block">
                   Project Details
                 </label>
                 <textarea
+                  id="home-contact-message"
                   required
                   rows={4}
                   placeholder="Tell me about your project goals, required tech stack, timeline, or any questions..."

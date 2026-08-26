@@ -61,18 +61,18 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
         <div className="p-5 space-y-3">
           {/* Category Tag Pill */}
           <div className="flex items-center justify-between">
-            <span className="text-xs font-semibold px-2.5 py-0.5 bg-[#023644]/50 text-[#22a0ad] border border-[#126972]/40 rounded-md capitalize">
+            <span className="text-xs font-semibold px-2.5 py-0.5 bg-[#023644]/70 text-cyan-400 border border-[#126972]/60 rounded-md capitalize">
               {project.category}
             </span>
           </div>
 
           {/* Title */}
-          <h3 className="text-base sm:text-lg font-bold text-slate-100 group-hover:text-[#22a0ad] transition-colors line-clamp-1">
+          <h3 className="text-base sm:text-lg font-bold text-slate-100 group-hover:text-cyan-400 transition-colors line-clamp-1">
             {project.title}
           </h3>
 
           {/* Description */}
-          <p className="text-xs text-slate-400 leading-relaxed line-clamp-2">
+          <p className="text-xs text-slate-300 leading-relaxed line-clamp-2">
             {project.desc}
           </p>
 
@@ -92,7 +92,7 @@ export default function ProjectCard({ project, onSelect }: ProjectCardProps) {
 
       {/* Footer Controls */}
       <div className="px-5 pb-5 pt-3 border-t border-slate-800/80 flex items-center justify-between mt-auto">
-        <span className="text-xs font-semibold text-[#22a0ad] group-hover:text-cyan-300 flex items-center gap-1">
+        <span className="text-xs font-semibold text-cyan-400 group-hover:text-cyan-300 flex items-center gap-1">
           View Case Study <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
         </span>
 

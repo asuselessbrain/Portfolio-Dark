@@ -10,16 +10,39 @@ export const WP_PROJECTS_URL = "https://wp.arfanahmed.tech/wp-json/wp/v2/project
 
 export function cleanHtmlText(html: string | undefined): string {
   if (!html) return "";
+  
+  // Strip HTML tags
   let text = html.replace(/<[^>]*>/g, "");
-  text = text
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#039;/g, "'")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&#8212;/g, "—")
-    .replace(/&#8211;/g, "–");
+
+  const decodeEntities = (str: string): string => {
+    return str
+      // Decode decimal numeric HTML entities (e.g., &#038; -> &, &#8217; -> ')
+      .replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(parseInt(dec, 10)))
+      // Decode hex numeric HTML entities (e.g., &#x26; -> &)
+      .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
+      // Common named entities
+      .replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&quot;/g, '"')
+      .replace(/&#039;/g, "'")
+      .replace(/&apos;/g, "'")
+      .replace(/&nbsp;/g, " ")
+      .replace(/&ndash;/g, "–")
+      .replace(/&mdash;/g, "—")
+      .replace(/&lsquo;/g, "‘")
+      .replace(/&rsquo;/g, "’")
+      .replace(/&ldquo;/g, "“")
+      .replace(/&rdquo;/g, "”")
+      .replace(/&hellip;/g, "…");
+  };
+
+  // Run decoding twice to handle double-encoded entities (e.g., &amp;#038;)
+  text = decodeEntities(text);
+  if (text.includes("&")) {
+    text = decodeEntities(text);
+  }
+
   return text.trim();
 }
 
@@ -122,7 +145,7 @@ export async function fetchWordPressProjects(): Promise<Project[]> {
       // Extract tags
       let tags: string[] = [];
       if (Array.isArray(acf.tags) && acf.tags.length > 0) {
-        tags = acf.tags.map((t: any) => typeof t === "string" ? t : t.name || t.slug);
+        tags = acf.tags.map((t: any) => cleanHtmlText(typeof t === "string" ? t : t.name || t.slug));
       } else if (Array.isArray(post.class_list)) {
         const rawTags = post.class_list
           .filter((cls: string) => cls.startsWith("tags-"))

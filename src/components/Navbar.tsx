@@ -48,40 +48,37 @@ export default function Navbar() {
         >
           <Code2 className="w-5 h-5 text-[#126972]" />
           <span className="text-slate-100 font-extrabold">
-            Arfan<span className="text-[#22a0ad]">.dev</span>
+            Arfan<span className="text-cyan-400">.dev</span>
           </span>
         </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center space-x-8">
-          <nav className="flex items-center space-x-8">
-            {navLinks.map((link) => {
-              const isActive = pathname === link.href;
-              return (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  onClick={handleNavClick}
-                  className={`text-sm font-medium relative py-1 transition-colors ${
-                    isActive ? "text-[#22a0ad] font-semibold" : "text-slate-400 hover:text-slate-100"
-                  }`}
-                >
-                  {link.name}
-                  {isActive && (
-                    <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#126972] to-[#22a0ad] rounded-full" />
-                  )}
-                </Link>
-              );
-            })}
-          </nav>
+        <div className="hidden md:flex items-center space-x-1">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={`px-4 py-2 text-xs font-semibold rounded-lg transition-all relative ${
+                  isActive ? "text-cyan-400 font-semibold" : "text-slate-400 hover:text-slate-100"
+                }`}
+              >
+                {link.name}
+                {isActive && (
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#126972] to-cyan-400 rounded-full" />
+                )}
+              </Link>
+            );
+          })}
 
-          {/* Resume CTA */}
+          {/* Download Resume Button */}
           <div className="flex items-center border-l border-slate-800 pl-6">
             <a
               href="/resume.pdf"
               download="Arfan_Ahmed_Resume.pdf"
               onClick={() => analytics.trackResumeDownload()}
-              className="px-4 py-2 border border-[#126972]/60 text-[#22a0ad] hover:bg-[#023644]/40 hover:border-[#126972] text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 shadow-sm"
+              className="px-4 py-2 border border-[#126972]/60 text-cyan-400 hover:bg-[#023644]/40 hover:border-[#126972] text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 shadow-sm"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Resume</span>
@@ -113,7 +110,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={handleNavClick}
                   className={`text-base font-semibold border-b border-slate-800/60 pb-3 transition-colors ${
-                    isActive ? "text-[#22a0ad] font-bold" : "text-slate-300 hover:text-white"
+                    isActive ? "text-cyan-400 font-bold" : "text-slate-300 hover:text-white"
                   }`}
                 >
                   {link.name}

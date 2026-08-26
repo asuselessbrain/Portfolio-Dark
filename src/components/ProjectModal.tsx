@@ -48,7 +48,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Modal Header */}
         <div className="p-6 border-b border-slate-800 bg-[#1e293b] flex items-center justify-between">
           <div>
-            <span className="text-xs font-semibold px-2.5 py-0.5 bg-[#023644]/50 text-[#22a0ad] border border-[#126972]/40 rounded-md capitalize">
+            <span className="text-xs font-semibold px-2.5 py-0.5 bg-[#023644]/70 text-cyan-400 border border-[#126972]/60 rounded-md capitalize">
               {project.category}
             </span>
             <h2 className="text-xl font-extrabold text-slate-100 leading-tight mt-1.5">

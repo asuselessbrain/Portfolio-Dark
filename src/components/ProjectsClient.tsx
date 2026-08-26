@@ -98,7 +98,7 @@ export default function ProjectsClient({
         className="space-y-3"
       >
         <div>
-          <div className="inline-flex items-center space-x-2 bg-[#023644]/50 border border-[#126972]/40 text-[#22a0ad] px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
+          <div className="inline-flex items-center space-x-2 bg-[#023644]/70 border border-[#126972]/60 text-cyan-400 px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
             <span className="w-2 h-2 rounded-full bg-[#126972] animate-pulse" />
             <span>Portfolio Archive</span>
           </div>
@@ -107,7 +107,7 @@ export default function ProjectsClient({
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-100">
           Projects & Case Studies
         </h1>
-        <p className="text-slate-400 font-sans text-sm sm:text-base max-w-xl leading-relaxed">
+        <p className="text-slate-300 font-sans text-sm sm:text-base max-w-xl leading-relaxed">
           Explore client builds and production full-stack systems fetched dynamically from WordPress REST API. Filter by category to inspect architecture breakdowns and live demos.
         </p>
       </motion.section>
@@ -125,8 +125,8 @@ export default function ProjectsClient({
             onClick={() => handleFilterChange(cat.value)}
             className={`px-4 py-2 text-xs font-semibold rounded-lg border transition-all uppercase tracking-wide cursor-pointer ${
               filter === cat.value
-                ? "border-[#126972]/80 text-[#22a0ad] bg-[#023644]/60 font-bold"
-                : "border-slate-800 text-slate-400 hover:text-slate-200 hover:bg-slate-800"
+                ? "border-[#126972]/80 text-cyan-400 bg-[#023644]/70 font-bold"
+                : "border-slate-800 text-slate-300 hover:text-slate-100 hover:bg-slate-800"
             }`}
           >
             {cat.label}

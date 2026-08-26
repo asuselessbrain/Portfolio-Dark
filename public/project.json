@@ -279,34 +279,36 @@
     {
         "id": "proj_9",
         "image": "/images/projects/proj_9.webp",
-        "title": "SwiftRide — Executive Chauffeur & Airport Transfer Landing Page",
+        "title": "SwiftRide — Executive Chauffeur & Airport Transfer Website",
         "category": "wordpress",
         "tags": [
             "WordPress",
             "Elementor",
-            "Landing Page",
+            "Multi-Page Website",
             "SEO",
             "WhatsApp Integration",
             "Responsive Design"
         ],
-        "desc": "A single-page, conversion-focused landing site for a Woking, Surrey-based executive chauffeur and airport transfer service, featuring an instant quote form, fleet showcase, and a floating WhatsApp booking button.",
+        "desc": "A 5-page WordPress website for a Woking, Surrey-based executive chauffeur and airport transfer business, built with dedicated service, coverage-area and contact pages, an instant quote/booking system, and a floating WhatsApp button.",
         "demoUrl": "https://swift-ride.co.uk/",
         "gitUrl": "",
-        "problem": "The client, a new chauffeuring and airport transport business, needed a clean, bold, mobile-friendly landing page from scratch — with no existing web presence — that could clearly present three vehicle types (Saloon, Estate, MPV), let visitors get an instant quote, book directly via WhatsApp, and start ranking on Google for airport transfer searches in Woking and Surrey.",
-        "solution": "Built a single-page WordPress site using Elementor on a dark blue and silver theme inspired by the client's reference sites. Structured the page with a hero quote widget, a three-vehicle fleet section (Saloon, Estate, MPV) with passenger/luggage capacity, a 'Why Choose Us' trust section (airport transfers, licensed & insured, 24/7 availability, flight monitoring), a detailed booking form with date/time pickers and an optional return-journey toggle, a floating WhatsApp chat button connected to the client's business number, and an interactive coverage-areas section refined through multiple client revision rounds. Added on-page SEO metadata and a custom location-pin-and-car logo per the client's brief.",
-        "result": "Delivered a fully responsive, single-page executive chauffeur website with a working instant-quote and booking-request flow, floating WhatsApp lead capture, SMTP-based email delivery of bookings, and a locally-optimized SEO structure targeting Woking, Surrey and major UK airports — refined across three rounds of client revisions before final handover.",
+        "problem": "The client, a new chauffeuring and airport transport business, needed a clean, bold, mobile-friendly website from scratch — with no existing web presence — that could clearly present three vehicle types (Saloon, Estate, MPV), let visitors get an instant quote, book directly via WhatsApp, and rank on Google for airport transfer and executive chauffeur searches across Woking and Surrey.",
+        "solution": "Built a 5-page WordPress site (Home, Airport Transfers, Executive Chauffeur Service, Areas We Cover, Contact Us) using Elementor on a dark blue and silver theme inspired by the client's reference sites. The Home page features a hero quote widget, a three-vehicle fleet section (Saloon, Estate, MPV) with capacity details, a trust-badge grid and a full booking form with date/time pickers and an optional return-journey toggle. Dedicated landing pages were added for Airport Transfers (with per-airport routes and FAQs) and the Executive Chauffeur Service (with a Woking-focused service breakdown and FAQs), plus an Areas We Cover page listing served towns and airports, and a Contact Us page. A floating WhatsApp chat button connected to the client's business number was added site-wide. Coverage areas and form fields were refined through multiple rounds of client revisions.",
+        "result": "Delivered a fully responsive, 5-page executive chauffeur website with keyword-targeted service pages, a working instant-quote and booking-request flow, floating WhatsApp lead capture, SMTP-based email delivery of bookings, and a locally-optimized SEO structure targeting Woking, Surrey and major UK airports — refined across three rounds of client revisions before final handover.",
         "archDetails": {
-            "frontend": "Elementor page builder with a custom dark blue and silver design system, featuring a hero booking widget, fleet cards, trust-badge grid, multi-step booking form (with return-journey toggle), and a tag-style 'Areas We Cover' section, all built for full mobile responsiveness.",
+            "frontend": "Elementor page builder with a custom dark blue and silver design system across 5 pages — a hero booking widget, fleet cards, trust-badge grid, multi-step booking form (with return-journey toggle), per-airport route cards, and a tag-style 'Areas We Cover' section, all built for full mobile responsiveness.",
             "backend": "WordPress core with the Elementor plugin stack, a floating WhatsApp chat widget wired to the client's business number, and SMTP-configured form delivery routing booking requests directly to the client's email.",
-            "database": "Standard WordPress MySQL schema extended with Elementor page/template data and form submission storage for booking requests.",
+            "database": "Standard WordPress MySQL schema extended with Elementor page/template data across 5 pages and form submission storage for booking requests.",
             "detailsList": [
-                "Single-page landing site covering hero, fleet, trust signals, booking form, and coverage areas.",
+                "5-page site structure: Home, Airport Transfers, Executive Chauffeur Service Woking, Areas We Cover, Contact Us.",
                 "Three-vehicle booking flow — Saloon, Estate, MPV — with capacity details and per-vehicle 'Book Now' CTAs.",
+                "Dedicated Airport Transfers page with per-airport route cards (Heathrow, Gatwick, Luton, Stansted, London City) and FAQ section.",
+                "Dedicated Executive Chauffeur Service page targeting Woking with a full service breakdown and FAQ section.",
                 "Floating WhatsApp button for instant chat-based bookings, connected to the client's business number.",
                 "Multi-field booking form with date/time selection and an optional 'Add Return Journey' toggle.",
                 "On-screen confirmation popup after booking submission, plus SMTP email delivery to the client.",
-                "Editable, client-refined 'Areas We Cover' section spanning Woking, Surrey, London, and major UK airports.",
-                "On-page SEO (meta titles, descriptions) targeting local airport transfer and chauffeur searches."
+                "Editable, client-refined 'Areas We Cover' page spanning Woking, Surrey towns and major UK airports.",
+                "On-page SEO (meta titles, descriptions, keyword-targeted copy) across service pages for local search rankings."
             ]
         }
     },
@@ -450,6 +452,119 @@
                 "Built a Contact Us page with a working inquiry form plus a direct partners/collaboration email link.",
                 "Swapped in client-supplied imagery from their shared drive in place of placeholder assets, preserving the original waterdrop logo mark.",
                 "Added Instagram link, an extra 'more activities coming soon' card on Home and Our Work, and an additional highlight box on the Updates page in a follow-up revision round."
+            ]
+        }
+    },
+    {
+        "id": "proj_14",
+        "image": "/images/projects/proj_14.webp",
+        "title": "Ontario Live Scan — Fingerprinting & Background Check Website",
+        "category": "wordpress",
+        "tags": [
+            "WordPress",
+            "Elementor",
+            "Multi-Page Website",
+            "SEO",
+            "Local Business",
+            "Responsive Design"
+        ],
+        "desc": "A 5-page WordPress website for a DOJ & FBI certified Live Scan fingerprinting facility in Ontario, California, built with dedicated services, process, about and contact pages targeting local biometric and background-check searches.",
+        "demoUrl": "https://ontariolivescan.com/",
+        "gitUrl": "",
+        "problem": "The client, a DOJ and FBI certified Live Scan fingerprinting facility serving the Inland Empire, needed a professional, trust-building website that could clearly explain their certified services, walk visitors through the fingerprinting process, present transparent pricing, and convert local searches into booked appointments.",
+        "solution": "Built a 5-page WordPress site (Home, Services, How It Works, About, Contact) using Elementor. The Home page leads with a DOJ & FBI Certified trust badge, a benefits grid (Same-Day Results, Professional Staff, Digital Live Scan, Walk-Ins Welcome, Convenient Location), transparent pricing, and a served-cities section covering Ontario, Rancho Cucamonga, Upland, Eastvale, Fontana, Chino, Pomona and Montclair. A dedicated Services page breaks down the four core offerings — DOJ Live Scan, FBI Channeling & Backgrounds, Ink Card Fingerprinting, and Notary Public Services — each with its own feature list and CTA. The How It Works page walks visitors through a 3-step process (Schedule Visit, Professional Digital Scan, Secure Results Transfer with ATI tracking) to reduce first-visit anxiety. The About page builds credibility with the facility's DOJ/FBI certification, technician expertise and local Ontario presence, and the Contact page provides a booking-oriented contact form, business hours, and an embedded Google Map.",
+        "result": "Delivered a fully responsive, 5-page biometric services website with clear service breakdowns, an easy-to-follow process explainer, transparent pricing, and a booking-focused contact flow — positioning the facility as a certified, trustworthy local provider for individuals, employers and government agencies across the Inland Empire.",
+        "archDetails": {
+            "frontend": "Elementor page builder across 5 pages with a trust-forward design system — certification badges, benefit icon grids, a 3-step process timeline, service cards with feature lists, and a served-cities section, all built for full mobile responsiveness.",
+            "backend": "WordPress core with the Elementor plugin stack and a contact form configured for direct appointment inquiry submissions.",
+            "database": "Standard WordPress MySQL schema extended with Elementor page/template data across 5 pages and contact form submission handling.",
+            "detailsList": [
+                "5-page site structure: Home, Services, How It Works, About, Contact.",
+                "DOJ & FBI certification trust badges and credibility signals placed across Home and About pages.",
+                "Dedicated Services page covering DOJ Live Scan, FBI Channeling & Backgrounds, Ink Card Fingerprinting, and Notary Public Services.",
+                "3-step 'How It Works' process page explaining scheduling, digital scanning, and secure results transfer with ATI tracking.",
+                "Transparent pricing section on the Home page ($36 rolling/processing fee) with clear disclosure on separate government fees.",
+                "Served-area section listing Ontario, Rancho Cucamonga, Upland, Eastvale, Fontana, Chino, Pomona and Montclair.",
+                "Contact page with inquiry form, phone, email, business hours, and an embedded Google Map for the facility location.",
+                "On-page SEO (meta titles, descriptions) targeting local Live Scan and fingerprinting searches in the Inland Empire."
+            ]
+        }
+    },
+    {
+        "id": "proj_15",
+        "image": "/images/projects/proj_15.webp",
+        "title": "Clear Progress ABA — WordPress Website Build",
+        "category": "wordpress",
+        "tags": [
+            "WordPress",
+            "Elementor",
+            "Elementor Pro",
+            "SEO",
+            "Responsive Design",
+            "SMTP Integration",
+            "Job Application Form",
+            "HIPAA Compliance"
+        ],
+        "desc": "A full 8 page WordPress website built from scratch for a New Jersey based ABA (Applied Behavior Analysis) therapy provider, designed to feel trustworthy, healthcare grade, and conversion focused for parents seeking therapy services for their children.",
+        "demoUrl": "https://clearprogressaba.com/",
+        "gitUrl": "",
+        "problem": "The client, a BCBA owned ABA therapy practice, needed a brand new website built from a reference design with no existing site to work from. Requirements included a working contact form that delivered to the client's email, a job application form with resume upload for recruiting, HIPAA compliant privacy and policy documentation, insurance provider transparency, and a fully responsive experience across desktop and mobile.",
+        "solution": "Built an 8 page site (Home, Our Approach, Services, About Us, Insurance, Contact, Jobs, Resources) on WordPress with Elementor, modeled after a reference design and matched to the client's brand colors and logo. Implemented SMTP-based email delivery for the contact form, a multi-question job application form with resume upload for the Careers page, an insurance provider showcase with expandable plan listings, a rewritten FAQ section explaining ABA therapy in client approved language, and HIPAA compliant Privacy Policy, Terms & Conditions, and Notice of Privacy Practices pages built from client supplied legal documents. Iterated through 8 rounds of client revisions covering copy changes, logo/image treatment (removing human faces per client preference), footer and navigation fixes, mobile-specific rendering issues, and social media link corrections.",
+        "result": "Delivered a fully responsive, HIPAA conscious healthcare website with working lead capture and job application forms, accurate insurance and FAQ content, and a polished BCBA owned brand presencecompleted across 8 rounds of client revisions from initial build through final QC and handover.",
+        "archDetails": {
+            "frontend": "Elementor page builder with custom sections for hero, insurance grid, FAQ accordion, careers/application form, and footer, refined across multiple QC rounds for consistent behavior on desktop and mobile.",
+            "backend": "WordPress core with Elementor plugin stack; SMTP-configured contact form with email delivery to the client inbox, and a job application form supporting resume file uploads.",
+            "database": "Standard WordPress MySQL schema extended with Elementor page/template data and form submission handling for both the contact and job application forms.",
+            "detailsList": [
+                "8 page site built from a reference design: Home, Our Approach, Services, About Us, Insurance, Contact, Jobs, and Resources.",
+                "SMTP based contact form with verified email delivery to the client's inbox.",
+                "Job application form with screening questions and resume upload for recruiting.",
+                "Insurance provider showcase with expandable list of accepted plans and a fallback message for unlisted plans.",
+                "Client supplied FAQ, Privacy Policy, Terms & Conditions, and HIPAA Notice of Privacy Practices content integrated as dedicated pages.",
+                "Logo and imagery treatment (no human faces, translucent logo fix) per client brand guidelines.",
+                "Mobile specific bug fixes for navigation, homepage image caching, and footer/copyright display.",
+                "Social media integration (Instagram, LinkedIn, Facebook, TikTok) and corrected office address formatting."
+            ]
+        }
+    },
+    {
+        "id": "proj_16",
+        "image": "/images/projects/proj_16.webp",
+        "title": "St Patrick's GFC GAA Club Website with Live Fixtures Integration",
+        "category": "wordpress",
+        "tags": [
+            "WordPress",
+            "Elementor",
+            "Elementor Pro",
+            "Foireann Open Data API",
+            "Third-Party API Integration",
+            "WooCommerce",
+            "Stripe Integration",
+            "Clubforce Integration",
+            "Responsive Design",
+            "SEO"
+        ],
+        "desc": "A full multi page WordPress website built from scratch for an Irish GAA (Gaelic football) club, integrating live fixtures/results, online membership, club lotto, merchandise, and sponsorship management into one platform for club officials and the local community.",
+        "demoUrl": "https://jackmurphy.pronizam.com/",
+        "gitUrl": "",
+        "problem": "The client, a GAA club committee, needed a website built from a reference design with no existing site, covering fixtures & results, news, club shop, sponsorship, membership, and history. Key challenges included pulling live fixtures/results automatically from the county GAA and LGFA (ladies) websites instead of manual entry, integrating Clubforce for online lotto, Foireann for membership sign-up, Stripe for recurring corporate sponsorship payments, and building an editable structure the club's own admins could manage without developer help going forward.",
+        "solution": "Built a multi page GAA club site (Home, Fixtures & Results, News, Club Shop, Teams, History, Photo Gallery, Sponsorship, Contact) on WordPress with Elementor, matched to club branding and colors. Implemented a live fixtures and results feed using the official Foireann Open Data API, filtered by age group and gender (Senior/Junior/Minor/Juvenile for men's and ladies football) with correct GAA style scoring format, replacing manual updates. Integrated Clubforce for the weekly club lotto (jackpot and numbers display), Foireann for membership sign-up and player registration, and Stripe payment links for monthly/annual corporate sponsorship subscriptions with a dedicated landing page. Built a sponsorship showcase with auto-scrolling logos linked to sponsor websites, an injury claim section (GAA/LGFA side-by-side with QR codes), a photo gallery page, and a news section the club can update. Iterated through 11+ rounds of revisions covering layout, hover/color states, mobile-specific responsive fixes (fixtures on one line, header sizing), font matching to a reference GAA site, contact page redesign, and ongoing sponsor list updates.",
+        "result": "Delivered a fully responsive GAA club website with live updating fixtures/results pulled via API, integrated online lotto, membership, and sponsorship payment flows, and an easily manageable content structure for the club completed across 11+ rounds of client and committee revisions from initial build through ongoing refinement.",
+        "archDetails": {
+            "frontend": "Elementor page builder with custom sections for hero, fixtures/results tabs (by age group and gender), lotto widget, news carousel, club shop preview, auto scrolling sponsor strip, and footer refined across multiple rounds for mobile and desktop consistency.",
+            "backend": "WordPress core with Elementor plugin stack; custom integration with the Foireann Open Data API (bearer token authenticated) to pull and filter live fixtures and results by competition, age group, and gender; WooCommerce adjacent Club Shop section linking to O'Neills; Clubforce embed for online lotto entry.",
+            "database": "Standard WordPress MySQL schema extended with Elementor page/template data, cached/queried fixture and result data from the Foireann API, and sponsorship/contact form submission handling.",
+            "detailsList": [
+                "Multi page GAA club site: Home, Fixtures & Results, News, Club Shop, Teams, History, Photo Gallery, Sponsorship, Membership, Contact.",
+                "Live fixtures and results via the Foireann Open Data API, filtered by age group and gender, with GAA format scoring corrected to match official display conventions.",
+                "Clubforce integration for the weekly club lotto (jackpot amount and last week's numbers).",
+                "Foireann integration for membership registration and sign in.",
+                "Stripe payment links for monthly and annual corporate sponsorship subscriptions, with a dedicated landing page.",
+                "Sponsorship showcase with auto scrolling sponsor logos, each linked to the sponsor's own website.",
+                "Injury claim section with side by side GAA and LGFA claim processes and QR codes.",
+                "Photo gallery page structured like the news section, linking to event photo slideshows.",
+                "Mobile specific fixes: single line fixture/result cards, header sizing, font matching to a reference club site.",
+                "Social media integration (Facebook, Instagram, X) and club contact details."
             ]
         }
     }

@@ -180,6 +180,8 @@ export default function TerminalWidget() {
         <span className="font-mono text-xs text-cyber-cyan">guest@arfan.dev:~$</span>
         <input
           ref={inputRef}
+          id="terminal-command-input"
+          aria-label="Terminal command input"
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
