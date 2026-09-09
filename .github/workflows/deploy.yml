@@ -37,5 +37,5 @@ jobs:
               git pull origin deployment
               npm install
               npm run build
-              pm2 restart portfolio
+              pm2 restart portfolio:3000
             fi
