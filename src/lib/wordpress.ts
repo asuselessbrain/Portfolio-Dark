@@ -5,12 +5,12 @@ export interface CategoryOption {
   value: string;
 }
 
-export const WP_CATEGORIES_URL = "https://wp.arfanahmed.tech/wp-json/wp/v2/project_category";
-export const WP_PROJECTS_URL = "https://wp.arfanahmed.tech/wp-json/wp/v2/projects?_embed&per_page=100";
+export const WP_CATEGORIES_URL = "https://dev.arfanahmed.tech/wp-json/wp/v2/project_category";
+export const WP_PROJECTS_URL = "https://dev.arfanahmed.tech/wp-json/wp/v2/projects?_embed&per_page=100";
 
 export function cleanHtmlText(html: string | undefined): string {
   if (!html) return "";
-  
+
   // Strip HTML tags
   let text = html.replace(/<[^>]*>/g, "");
 
